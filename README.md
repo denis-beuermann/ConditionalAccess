@@ -12,8 +12,8 @@ Store the sectret of your app registration in Azure KeyVault
 |--|--|--|--|
 |displayName|||Descriptive name of the policy|
 |state|||enable,disabled,enabledForReportingButNotEnforced|
-|conditions|signInRiskLevels||||
-||userRiskLevels|||
+|conditions|signInRiskLevels|||High, Medium, Low|
+||userRiskLevels||High, Medium, Low|
 ||clientAppTypes|||browser,mobileAppsAndDesktopClients,exchangeActiveSync,others|
 ||platforms|includePlatforms|All,android,iOS|
 |||excludePlatforms|All,android,iOS|
