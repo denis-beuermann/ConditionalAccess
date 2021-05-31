@@ -1,0 +1,23 @@
+variables:
+- name: vmImage
+  value: ubuntu-20.04
+- name: PS4TaskAzurePowerShellVersion
+  value: OtherVersion
+- name: PS4TaskPreferredAzurePowerShellVersion
+  value: 4.8.0
+- name: moduleName
+  value: ConditionalAccess
+- name: scriptPath
+  value: scripts
+- name: templatePath
+  value: 'templates'
+- name: location
+  value: westeurope
+- name: serviceConnection
+  value: DevOpsServicePrincipalName
+- name: clientId
+  value: 17777774-0bbc-4771-a78a-b7777772573
+- name: templateName
+  value: 'WorkplacePolicy01.json'
+- group: vg.s00.rg-weu-p-security
+  

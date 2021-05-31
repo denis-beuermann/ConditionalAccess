@@ -1,0 +1,72 @@
+{ 
+    "displayName": "WorkplacePolicy01 - Allow compliant device rich apps", 
+    "state": "enabledForReportingButNotEnforced", 
+    "conditions": { 
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        "clientAppTypes": [
+            "mobileAppsAndDesktopClients"
+        ],
+        "platforms": {
+            "includePlatforms": [
+                "All"
+            ],
+            "excludePlatforms": [
+                "iOS",
+                "android"
+            ]
+        },
+        "applications": { 
+            "includeApplications": [ 
+                "All" 
+            ],
+            "excludeApplications": [
+                "555e55-ff5a-4933-a083-c84ffffffe8c"
+            ]
+        }, 
+        "users": { 
+            "includeUsers": [
+            ],
+            "excludeUsers": [
+                "GuestsOrExternalUsers",
+                "45555555-3440-4dgg-bhh1-6b99999999b4",
+                "4444446d-5442-46ff-ahh2-186b99999163",
+                "23044448-2224-49ff-8h0h-3ahhhhhaf609"
+            ],
+            "includeGroups": [ 
+                "5e769024-0f21-4be0-af23-dd6045caa1c9"
+            ], 
+            "excludeGroups": [
+                "4db55555-a66e-411e-66c6e-f66666a21a6b",
+                "55555aaa-e66e-4112-b6663-66666668cbab",
+                "0c555553-b66b-11fa-b66ea-1666666d911b"     
+            ],
+            "includeRoles": [    
+            ],
+            "excludeRoles": [
+                "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                "cf1c38e5-3621-4004-a7cb-879624dced7c",
+                "9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f",
+                "c430b396-e693-46cc-96f3-db01bf8bb62a",
+                "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+                "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+                "e3973bdf-4987-49ae-837a-ba8e231c7286"     
+            ]
+        },
+        "locations": {
+            "includeLocations": [
+                "All"
+            ],
+            "excludeLocations": [
+                "777771e56-9667-66e7-b669-bf7777777a5d"
+            ]
+        }
+    },
+    "grantControls": { 
+        "operator": "OR", 
+        "builtInControls": [ 
+             "compliantDevice"
+        ] 
+    } 
+}

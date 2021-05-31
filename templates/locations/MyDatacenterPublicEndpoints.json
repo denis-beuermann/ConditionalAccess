@@ -1,0 +1,15 @@
+{
+    "@odata.type": "#microsoft.graph.ipNamedLocation",
+    "displayName": "MyDatacenterPublicEndpoints",
+    "isTrusted": true,
+    "ipRanges": [
+        {
+            "@odata.type": "#microsoft.graph.iPv4CidrRange",
+            "cidrAddress": "xx.xx.xxx.xx/32"
+        },
+        {
+            "@odata.type": "#microsoft.graph.iPv4CidrRange",
+            "cidrAddress": "xx.xx.xxx.xx/32"
+        }
+    ]
+}
