@@ -1,0 +1,11 @@
+{
+    "@odata.type": "#microsoft.graph.ipNamedLocation",
+    "displayName": "loc_T1Ext_Goodtech",
+    "isTrusted": true,
+    "ipRanges": [
+        {
+            "@odata.type": "#microsoft.graph.iPv4CidrRange",
+            "cidrAddress": "92.221.251.58/32"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "@odata.type": "#microsoft.graph.ipNamedLocation",
+    "displayName": "loc_T1Ext_EmployeeHomeOffice",
+    "isTrusted": true,
+    "ipRanges": [
+        {
+            "@odata.type": "#microsoft.graph.iPv4CidrRange",
+            "cidrAddress": "146.66.200.182/32"
+        }
+    ]
+}

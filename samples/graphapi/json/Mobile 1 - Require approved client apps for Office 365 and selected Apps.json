@@ -1,0 +1,46 @@
+{ 
+    "displayName": "Mobile 1 - Require approved client apps for Office 365 and selected Apps", 
+    "state": "disabled", 
+    "conditions": { 
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        "clientAppTypes": [
+            "All"
+        ],
+        "platforms": {
+            "includePlatforms": [
+                "iOS",
+                "android"
+            ],
+            "excludePlatforms": []
+        },
+        "applications": { 
+            "includeApplications": [ 
+                "Office365",
+                "95de633a-083e-42f5-b444-a4295d8e9314",
+                "9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7"
+
+            ],
+            "excludeApplications": []
+        }, 
+        "users": { 
+            "includeUsers": [
+            ],
+            "excludeUsers": [
+                "GuestsOrExternalUsers"
+            ],
+            "includeGroups": [ 
+                "6c96716b-b32b-40b8-9009-49748bb6fcd5"
+            ], 
+            "excludeGroups": [ 
+                 
+            ] 
+        }
+    }, 
+    "grantControls": { 
+        "operator": "OR", 
+        "builtInControls": [ 
+             "approvedApplication"
+        ] 
+    } 
+}

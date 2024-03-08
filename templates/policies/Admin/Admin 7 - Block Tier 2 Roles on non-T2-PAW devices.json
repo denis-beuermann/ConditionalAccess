@@ -1,0 +1,63 @@
+{
+    "displayName": "Admin 7 - Block Tier 2 Roles on non-T2-PAW devices",
+    "state": "enabled",
+    "sessionControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "all"
+        ],
+        "platforms": null,
+        "locations": null,
+        "times": null,
+        "deviceStates": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "None"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": [],
+            "applicationFilter": null
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [
+                "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                "45493151-3540-4d48-b311-6b98ec68f9b4",
+                "8145ad6d-5372-4626-ad12-186b9ce0a163"
+            ],
+            "includeGroups": [],
+            "excludeGroups": [],
+            "includeRoles": [
+                "3f1acade-1e04-4fbc-9b69-f0302cd84aef"
+            ],
+            "excludeRoles": [],
+            "includeGuestsOrExternalUsers": null,
+            "excludeGuestsOrExternalUsers": null
+        },
+        "devices": {
+            "includeDeviceStates": [],
+            "excludeDeviceStates": [],
+            "includeDevices": [],
+            "excludeDevices": [],
+            "deviceFilter": {
+                "mode": "exclude",
+                "rule": "device.displayName -startsWith \"CPAWT2\" -or device.displayName -startsWith \"VPAW002\""
+            }
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "block"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": [],
+        "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('eb03d26f-8b4e-4363-8343-7da86022b0a5')/grantControls/authenticationStrength/$entity",
+        "authenticationStrength": null
+    }
+}

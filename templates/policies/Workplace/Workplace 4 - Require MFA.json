@@ -1,0 +1,169 @@
+{
+    "displayName": "Workplace 4 - Require MFA",
+    "state": "enabled",
+    "conditions": {
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        "clientAppTypes": [
+            "browser",
+            "mobileAppsAndDesktopClients"
+        ],
+        "platforms": {
+            "includePlatforms": [
+                "All"
+            ],
+            "excludePlatforms": [
+                "iOS",
+                "android"
+            ]
+        },
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [
+                "372140e0-b3b7-4226-8ef9-d57986796201",
+                "9cdead84-a844-4324-93f2-b2e6bb768d07",
+                "508ad772-8b4f-4396-a9b5-f89bdfcf9402",
+                "fa4345a4-a730-4230-84a8-7d9651b86739",
+                "1697d0cd-1d83-4d0b-9b5d-b8f49fb4ddac",
+                "7e7fcaed-8aaa-4e00-ad22-54b33f21f5ef",
+                "627458ab-0cec-4a85-a6ce-4cd2c37f1e3c",
+                "a8d294b7-dee6-4134-a84f-efcc7e7e8932",
+                "9d6e8ad9-05a5-47d7-b0ee-73dc3e3e1013"
+            ]
+        },
+        "users": { 
+            "includeUsers": [
+            ],
+            "excludeUsers": [
+                "GuestsOrExternalUsers",
+                "45493151-3540-4d48-b311-6b98ec68f9b4",
+                "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                "2300ccc8-2124-4937-84f0-3a63872af609",
+                "b3b49fac-e3e9-4dc2-9df3-1638f2d68017",
+                "2f2d1995-6b41-4dc1-997e-4641d4a4e99c",
+                "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                "58941a10-492a-46c2-b6c3-b215e0306e31"
+            ],
+            "includeGroups": [ 
+                "5e769024-0f21-4be0-af23-dd6045caa1c9",
+                "68e73c25-3636-48fa-9d62-01e4c959441b"
+            ], 
+            "excludeGroups": [
+                "4db7708c-ae5e-470e-bdce-f1e410a21a6b",
+                "f5ec4aaa-e33e-4562-bb83-6f014478cbab",
+                "0c58eb53-bd5b-4cfa-b8ea-15f969fd911b",
+                "4a037dbc-3108-412c-82e2-e51296c0ea08"   
+            ],
+            "includeRoles": [    
+            ],
+            "excludeRoles": [
+                "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                "cf1c38e5-3621-4004-a7cb-879624dced7c",
+                "9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f",
+                "c430b396-e693-46cc-96f3-db01bf8bb62a",
+                "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+                "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+                "e3973bdf-4987-49ae-837a-ba8e231c7286",
+                "7495fdc4-34c4-4d15-a289-98788ce399fd",
+                "aaf43236-0c0d-4d5f-883a-6955382ac081",
+                "3edaf663-341e-4475-9f94-5c398ef6c070",
+                "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+                "158c047a-c907-4556-b7ef-446551a6b5f7",
+                "7698a772-787b-4ac8-901f-60d6b08affd2",
+                "17315797-102d-40b4-93e0-432062caca18",
+                "e6d1a23a-da11-4be4-9570-befc86d067a7",
+                "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91",
+                "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4",
+                "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+                "d29b2b05-8046-44ba-8758-1e26182fcf32",
+                "9360feb5-f418-4baa-8175-e2a00bac4301",
+                "8329153b-31d0-4727-b945-745eb3bc5f31",
+                "44367163-eba1-44c3-98af-f5787879f96a",
+                "29232cdf-9323-42fd-ade2-1d097af3e4de",
+                "6e591065-9bad-43ed-90f3-e9424366d2f0",
+                "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+                "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+                "62e90394-69f5-4237-9190-012177145e10",
+                "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+                "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+                "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+                "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+                "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+                "eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c",
+                "31e939ad-9672-4796-9c2e-873181342d2d",
+                "3a2c62db-5318-420d-8d74-23affee5d9d5",
+                "74ef975b-6605-40af-a5d2-b9539d836353",
+                "b5a8dcf3-09d5-43a9-a639-8e29ef291470",
+                "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+                "ac16e43d-7b2d-40e0-ac05-243ff356ab5b",
+                "790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b",
+                "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
+                "2b745bdf-0803-4d80-aa65-822c4493daac",
+                "966707d0-3269-4727-9be2-8c3a10f19b9d",
+                "a9ea8996-122f-4c74-9520-8edcd192826c",
+                "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+                "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f",
+                "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477",
+                "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+                "e8611ab8-c189-46e8-94e1-60213ab1f814",
+                "fe930be7-5e62-47db-91af-98c3a49a38b1",
+                "75934031-6c7e-415a-99d7-48dbd49e875e",
+                "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+                "fcf91098-03e3-41a9-b5ba-6f0ec8188a12",
+                "f70938a0-fc10-4177-9e90-2178f8765737",
+                "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+                "69091246-20e8-4a56-aa4d-066075b2a7a8",
+                "75941009-915a-4869-abe7-691bff18279e",
+                "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+                "f023fd81-a637-4b56-95fd-791ac0226033",
+                "5d6b6bb7-de71-4623-b4af-96380a352509",
+                "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+                "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                "8835291a-918c-4fd7-a9ce-faa49f0cf7d9",
+                "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+                "4a5d8f65-41da-4de4-8968-e035b65339cf"
+            ]
+        },
+        "locations": {
+            "includeLocations": [
+                "All"
+            ],
+            "excludeLocations": [
+                "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                "004414ec-46b0-4d81-9d45-4ffc0348bac7",
+                "07f51a28-98e2-4c51-8970-1b916796cff0",
+                "059262f8-b4d7-4d4e-b287-55496cba398f",
+                "077e85d5-3add-4a5d-b833-d76aca0f32ea",
+                "090778fc-fc66-46c6-a346-c0132b4af9e1",
+                "08e11e19-8f83-481c-9d0f-dc43a47e6ffe",
+                "04ce7112-5f14-4b06-9d4f-84b12bd4191a",
+                "664e049c-ea80-4b31-af74-e75e2fc6721b",
+                "0bc91f68-9884-4d1c-b3b9-0bb00a264e5b",
+                "0ab3d6df-012a-4cf6-9072-6144005028da",
+                "dcb11a9f-71f0-4ba8-a0b8-363bb2cf1c2c"
+            ]
+        },
+        "devices": {
+            "includeDeviceStates": [],
+            "excludeDeviceStates": [],
+            "includeDevices": [],
+            "excludeDevices": [],
+            "deviceFilter": {
+                "mode": "exclude",
+                "rule": "device.enrollmentProfileName -eq \"Shared Device Profile\" -or device.enrollmentProfileName -eq \"Shared\""
+            }
+        }
+    },
+    "grantControls": {
+        "operator": "or",
+        "builtInControls": [
+            "mfa"
+        ]
+    }
+}

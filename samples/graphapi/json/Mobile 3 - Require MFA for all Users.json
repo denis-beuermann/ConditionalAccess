@@ -1,0 +1,42 @@
+{ 
+    "displayName": "Mobile 3 - Require MFA for all Users", 
+    "state": "disabled", 
+    "conditions": { 
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        "clientAppTypes": [
+            "mobileAppsAndDesktopClients"
+        ],
+        "platforms": {
+            "includePlatforms": [
+                "iOS",
+                "android"
+            ],
+            "excludePlatforms": [
+                
+            ]
+        },
+        "applications": { 
+            "includeApplications": [ 
+                "All" 
+            ],
+            "excludeApplications": [
+                
+            ]
+        }, 
+        "users": { 
+            "includeGroups": [ 
+                "6c96716b-b32b-40b8-9009-49748bb6fcd5"
+            ], 
+            "excludeGroups": [ 
+                 
+            ] 
+        }
+    }, 
+    "grantControls": { 
+        "operator": "OR", 
+        "builtInControls": [ 
+             "mfa"
+        ] 
+    } 
+}

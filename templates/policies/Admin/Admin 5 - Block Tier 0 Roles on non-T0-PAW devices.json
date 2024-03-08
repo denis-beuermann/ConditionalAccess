@@ -1,0 +1,69 @@
+{
+    "displayName": "Admin 5 - Block Tier 0 Roles on non-T0-PAW devices",
+    "state": "enabled",
+    "sessionControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "all"
+        ],
+        "platforms": null,
+        "locations": null,
+        "times": null,
+        "deviceStates": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [
+                "d4ebce55-015a-49b5-a083-c84d1797ae8c"
+            ],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": [],
+            "applicationFilter": null
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [
+                "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                "45493151-3540-4d48-b311-6b98ec68f9b4",
+                "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                "2d19b330-7bf9-4267-a5a5-70a8a72fb729"
+            ],
+            "includeGroups": [
+                "46e398de-06a0-435c-a77d-5b2f274723e0"
+            ],
+            "excludeGroups": [],
+            "includeRoles": [
+                "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                "62e90394-69f5-4237-9190-012177145e10"
+            ],
+            "excludeRoles": [],
+            "includeGuestsOrExternalUsers": null,
+            "excludeGuestsOrExternalUsers": null
+        },
+        "devices": {
+            "includeDeviceStates": [],
+            "excludeDeviceStates": [],
+            "includeDevices": [],
+            "excludeDevices": [],
+            "deviceFilter": {
+                "mode": "exclude",
+                "rule": "device.displayName -startsWith \"CPAWT0\" -or device.displayName -startsWith \"SAZ0003\" -or device.displayName -startsWith \"SAZ0004\" -or device.displayName -startsWith \"SAZ0012\" -or device.displayName -startsWith \"SAZ0011\" -or device.displayName -startsWith \"VPAW000-\" -or device.displayName -startsWith \"SAZ0071\""
+            }
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "block"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": [],
+        "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('75bf83d8-106d-472a-9608-4d223a3e24c2')/grantControls/authenticationStrength/$entity",
+        "authenticationStrength": null
+    }
+}

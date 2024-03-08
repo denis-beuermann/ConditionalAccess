@@ -1,0 +1,8 @@
+"locations": {
+    "includeLocations": [
+        "All"
+    ],
+    "excludeLocations": [
+        "AllTrusted"
+    ]
+},

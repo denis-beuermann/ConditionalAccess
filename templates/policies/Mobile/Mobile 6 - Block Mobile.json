@@ -1,0 +1,45 @@
+{ 
+    "displayName": "Mobile 6 - Block Mobile", 
+    "state": "enabled", 
+    "conditions": { 
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        "clientAppTypes": [
+            "mobileAppsAndDesktopClients",
+            "browser"
+        ],
+        "platforms": {
+            "includePlatforms": [
+                "iOS",
+                "android"
+            ],
+            "excludePlatforms": [
+               
+            ]
+        },
+        "applications": { 
+            "includeApplications": [ 
+                "All" 
+            ],
+            "excludeApplications": []
+        }, 
+        "users": { 
+            "includeGroups": [
+                "f5ec4aaa-e33e-4562-bb83-6f014478cbab",
+                "4db7708c-ae5e-470e-bdce-f1e410a21a6b"
+            ],
+            "excludeGroups": [ 
+                 
+            ],
+            "excludeUsers": [
+                
+            ]
+        }
+    }, 
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "block"
+        ]
+    } 
+}

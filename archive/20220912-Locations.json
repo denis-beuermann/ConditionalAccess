@@ -1,0 +1,2340 @@
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/namedLocations",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "11b57b4b-f815-4c91-8a70-e0ca96ad71a0",
+            "displayName": "loc_T1Ext_Obrela",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "62.169.229.244/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "79.129.27.118/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "37.99.196.100/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "d3d88004-d3a2-40eb-b521-bd7e965fb99e",
+            "displayName": "loc_T1Ext_Quorum(Tieto)",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "149.20.201.32/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "45.62.190.18/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "85.255.16.29/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "209.206.12.57/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "140.82.201.134/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "140.82.203.46/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "140.82.195.81/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "85.255.20.16/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "82.72.119.53/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "94.214.188.88/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "dcb11a9f-71f0-4ba8-a0b8-363bb2cf1c2c",
+            "displayName": "loc_IT20",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "88.135.71.0/24"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+            "displayName": "loc_WD_CentralDC",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "89.246.253.88/29"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "94.134.188.144/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "81.26.152.162/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "664e049c-ea80-4b31-af74-e75e2fc6721b",
+            "displayName": "loc_Infolog",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "194.126.198.214/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "194.126.198.147/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "7a336803-67af-4915-bf19-5769249c4a5d",
+            "displayName": "loc_publicIP_officeHH",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "194.39.1.132/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "194.39.0.26/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "62.214.191.50/29"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "88.130.201.130/29"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "e485b90e-de3d-4627-a2ce-ad7975210142",
+            "displayName": "loc_T1Ext_Halliburton",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "78.230.210.151/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "178.156.124.105/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "86.175.212.116/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "82.69.103.80/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "78.146.175.112/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "213.37.184.72/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "212.0.101.97/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "148.64.0.0/16"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "134.132.0.0/16"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "188.76.57.152/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "213.37.205.31/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "188.76.57.233/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "94.5.95.1/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "92.24.49.186/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "94e81408-26cd-42ca-adc4-cd426012d936",
+            "displayName": "loc_T1Ext_RealAudio",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "37.24.209.170/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "82.198.64.217/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "40fc9098-d4fa-4ae6-9fa5-c0e688c84e9e",
+            "displayName": "loc_T1Ext_SER",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "195.243.25.0/24"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "62.225.156.156/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "195.243.25.192/29"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "223879fe-d9ca-486c-b9c6-ae4c2fcfae60",
+            "displayName": "loc_T1Ext_SensiaRussia",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "178.176.97.170/30"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "178.72.74.5/24"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "5.143.247.34/30"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "89.175.146.222/30"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "192.23.188.0/24"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "136.252.163.0/24"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "9e31d071-2bbf-4925-bab3-39ca3b048bdb",
+            "displayName": "loc_S4SAPSystemSMTP",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.50.19.75/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "72f7432d-571f-461d-a14a-5ab878901699",
+            "displayName": "loc_t1Ext_HagenTriebsch",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "80.151.153.36/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "8603c1fe-ac1c-4553-a09d-6a2389466fe7",
+            "displayName": "loc_T1Ext_ISG",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "5.148.12.74/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "d2807515-a7e7-4f80-90f7-c1ebcd765465",
+            "displayName": "loc_T1Ext_TR_SOC",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "153.92.29.145/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "f065f14e-4397-427b-8cd4-eeeb4e7f3104",
+            "displayName": "loc_T1Ext_IC_Consult_VPN",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "193.159.177.0/27"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "ec9796dc-57e5-4cb5-9de7-0dfa94e139be",
+            "displayName": "loc_publicIP_LU",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "141.6.11.0/24"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "db379825-3f2e-4bb4-bb77-b3326343790c",
+            "displayName": "loc_T1Ext_Flare",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "217.14.134.89/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "86.30.229.43/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "81.143.202.166/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "ade828e6-13a1-4fb6-a206-13719632af49",
+            "displayName": "loc_publicIP_guest_HH",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "84.46.88.45/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "89920cc3-cf02-40eb-9591-d6eb7f498c9f",
+            "displayName": "SharePointMG",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "51.105.22.64/27"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.countryNamedLocation",
+            "id": "757773e7-5a33-4128-b0c9-c5fc68e3b81e",
+            "displayName": "SPMigration",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "countriesAndRegions": [
+                "AF",
+                "AX",
+                "AL",
+                "DZ",
+                "AS",
+                "AD",
+                "AO",
+                "AI",
+                "AQ",
+                "AG",
+                "AR",
+                "AM",
+                "AW",
+                "AU",
+                "AT",
+                "AZ",
+                "BS",
+                "BH",
+                "BD",
+                "BB",
+                "BY",
+                "BE",
+                "BZ",
+                "BJ",
+                "BM",
+                "BT",
+                "BO",
+                "BQ",
+                "BA",
+                "BW",
+                "BV",
+                "BR",
+                "IO",
+                "BN",
+                "BG",
+                "BF",
+                "BI",
+                "CV",
+                "KH",
+                "CM",
+                "CA",
+                "KY",
+                "CF",
+                "TD",
+                "CL",
+                "CN",
+                "CX",
+                "CC",
+                "CO",
+                "KM",
+                "CK",
+                "CR",
+                "CI",
+                "HR",
+                "CU",
+                "CW",
+                "CY",
+                "CZ",
+                "CD",
+                "DK",
+                "DJ",
+                "DM",
+                "DO",
+                "EC",
+                "EG",
+                "EH",
+                "SV",
+                "GQ",
+                "ER",
+                "EE",
+                "ET",
+                "FK",
+                "FO",
+                "FJ",
+                "FI",
+                "FR",
+                "GF",
+                "PF",
+                "TF",
+                "GA",
+                "GM",
+                "GE",
+                "DE",
+                "GH",
+                "GI",
+                "GR",
+                "GL",
+                "GD",
+                "GP",
+                "GU",
+                "GT",
+                "GG",
+                "GN",
+                "GW",
+                "GY",
+                "HT",
+                "HM",
+                "VA",
+                "HN",
+                "HK",
+                "HU",
+                "IS",
+                "IN",
+                "ID",
+                "IR",
+                "IQ",
+                "IE",
+                "IM",
+                "IL",
+                "IT",
+                "JM",
+                "JP",
+                "JE",
+                "JO",
+                "KZ",
+                "KE",
+                "KI",
+                "KR",
+                "KW",
+                "KG",
+                "LA",
+                "LV",
+                "LB",
+                "LS",
+                "LR",
+                "LY",
+                "LI",
+                "LT",
+                "LU",
+                "MO",
+                "MG",
+                "MW",
+                "MY",
+                "MV",
+                "ML",
+                "MT",
+                "MH",
+                "MQ",
+                "MR",
+                "MU",
+                "YT",
+                "MX",
+                "FM",
+                "MD",
+                "MC",
+                "MN",
+                "ME",
+                "MS",
+                "MA",
+                "MZ",
+                "MM",
+                "NA",
+                "NR",
+                "NP",
+                "NL",
+                "AN",
+                "NC",
+                "NZ",
+                "NI",
+                "NE",
+                "NG",
+                "NU",
+                "NF",
+                "KP",
+                "MK",
+                "MP",
+                "NO",
+                "OM",
+                "PK",
+                "PW",
+                "PS",
+                "PA",
+                "PG",
+                "PY",
+                "PE",
+                "PH",
+                "PN",
+                "PL",
+                "PT",
+                "PR",
+                "QA",
+                "CG",
+                "RE",
+                "RO",
+                "RU",
+                "RW",
+                "BL",
+                "SH",
+                "KN",
+                "LC",
+                "MF",
+                "PM",
+                "VC",
+                "WS",
+                "SM",
+                "ST",
+                "SA",
+                "SN",
+                "RS",
+                "SC",
+                "SL",
+                "SG",
+                "SX",
+                "SK",
+                "SI",
+                "SB",
+                "SO",
+                "ZA",
+                "GS",
+                "SS",
+                "ES",
+                "LK",
+                "SD",
+                "SR",
+                "SJ",
+                "SZ",
+                "SE",
+                "CH",
+                "SY",
+                "TW",
+                "TJ",
+                "TZ",
+                "TH",
+                "TL",
+                "TG",
+                "TK",
+                "TO",
+                "TT",
+                "TN",
+                "TR",
+                "TM",
+                "TC",
+                "TV",
+                "UG",
+                "UA",
+                "AE",
+                "GB",
+                "US",
+                "UY",
+                "UM",
+                "UZ",
+                "VU",
+                "VE",
+                "VN",
+                "VG",
+                "VI",
+                "WF",
+                "YE",
+                "ZM",
+                "ZW"
+            ],
+            "includeUnknownCountriesAndRegions": false,
+            "countryLookupMethod": "clientIpAddress"
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "4891d6e2-53f5-44ca-838c-4b9a0f79666d",
+            "displayName": "loc_AzureSharepointMigration",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "40.119.157.114/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "ee2a45c5-220b-4123-a663-d8ba2e241bc2",
+            "displayName": "loc_Internal_WD",
+            "modifiedDateTime": null,
+            "createdDateTime": null,
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "10.0.0.4/27"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "01f87633-7474-41d5-9e7c-b5b09d70a6e0",
+            "displayName": "loc_GKGab_PublicIP",
+            "modifiedDateTime": "2021-06-09T09:29:57.4196073Z",
+            "createdDateTime": "2021-04-23T06:07:39.3568712Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.50.191.90/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "51.105.97.173/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "075a5479-3c49-4279-baf3-19b48ad9328b",
+            "displayName": "loc_T1Ext_PWC",
+            "modifiedDateTime": "2022-07-13T05:33:45.6041953Z",
+            "createdDateTime": "2021-04-23T19:32:18.7590231Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "79.165.78.157/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "77.37.200.188/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "77.51.194.240/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "188.134.69.244/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "78.138.157.62/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "94.45.222.214/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "91.77.166.248/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "185.127.224.53/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "195.46.171.211/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "78.36.200.237/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0a093868-9109-4937-ad22-ec394cb4faa0",
+            "displayName": "loc_T1Ext_Arcadia",
+            "modifiedDateTime": "2021-09-28T06:13:41.8645752Z",
+            "createdDateTime": "2021-04-26T07:03:28.668783Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "185.134.72.0/22"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "087219f6-34f4-4776-8512-b32954552fbd",
+            "displayName": "loc_T1Ext_GMCS",
+            "modifiedDateTime": "2021-05-27T07:48:42.9059467Z",
+            "createdDateTime": "2021-04-26T07:06:45.3737649Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "91.195.204.122/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "94.181.178.138/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "109.195.189.87/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "213.208.161.51/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0f530bb3-61e6-4798-a54b-2d2c87a6de96",
+            "displayName": "loc_T1Ext_EIGEN",
+            "modifiedDateTime": "2021-04-26T08:27:12.0141624Z",
+            "createdDateTime": "2021-04-26T08:27:12.0141624Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "109.74.20.181/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.countryNamedLocation",
+            "id": "16d3ac61-01ae-4c48-a79d-979497c5450f",
+            "displayName": "loc_Suspicious_Countries",
+            "modifiedDateTime": "2021-09-28T09:43:38.2614861Z",
+            "createdDateTime": "2021-04-29T13:46:02.66108Z",
+            "countriesAndRegions": [
+                "ZW",
+                "ZM",
+                "YE",
+                "WF",
+                "VI",
+                "VG",
+                "VN",
+                "VE",
+                "VU",
+                "UZ",
+                "UM",
+                "UY",
+                "UA",
+                "UG",
+                "TV",
+                "TC",
+                "TM",
+                "TN",
+                "TT",
+                "TO",
+                "TK",
+                "TG",
+                "TL",
+                "TH",
+                "TZ",
+                "TJ",
+                "TW",
+                "SY",
+                "SZ",
+                "SJ",
+                "SR",
+                "SD",
+                "LK",
+                "SS",
+                "GS",
+                "SB",
+                "SO",
+                "SX",
+                "SL",
+                "SC",
+                "SN",
+                "RS",
+                "ST",
+                "SM",
+                "VC",
+                "WS",
+                "PM",
+                "MF",
+                "LC",
+                "KN",
+                "SH",
+                "BL",
+                "RW",
+                "RE",
+                "CG",
+                "PR",
+                "PN",
+                "PH",
+                "PE",
+                "PY",
+                "PG",
+                "PS",
+                "PW",
+                "PK",
+                "OM",
+                "MP",
+                "MK",
+                "KP",
+                "NU",
+                "NG",
+                "NE",
+                "NI",
+                "NZ",
+                "NC",
+                "NP",
+                "NR",
+                "NA",
+                "MM",
+                "MZ",
+                "MA",
+                "MS",
+                "MN",
+                "MD",
+                "FM",
+                "YT",
+                "MU",
+                "MR",
+                "MQ",
+                "MH",
+                "ML",
+                "MV",
+                "MY",
+                "MW",
+                "MG",
+                "LT",
+                "MO",
+                "LR",
+                "LS",
+                "LV",
+                "LA",
+                "KG",
+                "KW",
+                "KI",
+                "KE",
+                "KZ",
+                "JE",
+                "JM",
+                "IL",
+                "IM",
+                "IQ",
+                "IR",
+                "ID",
+                "HN",
+                "VA",
+                "HM",
+                "HT",
+                "GY",
+                "GW",
+                "GN",
+                "GG",
+                "GT",
+                "GU",
+                "GP",
+                "GD",
+                "GI",
+                "GH",
+                "GE",
+                "GM",
+                "GA",
+                "TF",
+                "PF",
+                "GF",
+                "FJ",
+                "FO",
+                "FK",
+                "ET",
+                "ER",
+                "GQ",
+                "SV",
+                "EH",
+                "EC",
+                "DO",
+                "DM",
+                "DJ",
+                "CD",
+                "CU",
+                "CI",
+                "CR",
+                "CK",
+                "KM",
+                "CO",
+                "CC",
+                "CX",
+                "CN",
+                "CL",
+                "TD",
+                "CF",
+                "CM",
+                "KH",
+                "CV",
+                "BI",
+                "BF",
+                "BN",
+                "IO",
+                "BV",
+                "BW",
+                "BQ",
+                "BT",
+                "BM",
+                "BJ",
+                "BZ",
+                "BB",
+                "BD",
+                "BS",
+                "AW",
+                "AG",
+                "AQ",
+                "AI",
+                "AO",
+                "AS",
+                "AD",
+                "AF",
+                "AM"
+            ],
+            "includeUnknownCountriesAndRegions": false,
+            "countryLookupMethod": "clientIpAddress"
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "06f81030-21d4-4dec-9038-bdf5af107d9d",
+            "displayName": "loc_T1Ext_EMMSA",
+            "modifiedDateTime": "2021-04-30T15:12:21.0869575Z",
+            "createdDateTime": "2021-04-30T15:12:21.0869575Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "200.68.82.145/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "200.68.82.146/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "200.68.82.147/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "200.68.82.148/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "200.68.82.149/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "190.188.155.52/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "04333b93-40f0-41dc-a02f-674f397b4301",
+            "displayName": "loc_T1Ext_GEOFLYSA",
+            "modifiedDateTime": "2021-04-30T15:15:46.2208858Z",
+            "createdDateTime": "2021-04-30T15:15:46.2208858Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "181.166.120.253/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0927acba-68fc-4346-b4bb-32110fe21c6b",
+            "displayName": "loc_T1Ext_EmployeeHomeOffice",
+            "modifiedDateTime": "2021-04-30T18:04:20.8163372Z",
+            "createdDateTime": "2021-04-30T18:04:20.8163372Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "146.66.200.182/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0bfda018-6899-44bd-af62-cb316233660b",
+            "displayName": "loc_T1Ext_GEOGIN",
+            "modifiedDateTime": "2021-05-04T07:39:38.7099594Z",
+            "createdDateTime": "2021-05-04T07:39:38.7099594Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "54.94.73.205/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "54.207.241.190/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "079f3982-0696-4f0b-b1e8-6258260bbb50",
+            "displayName": "loc_BASF",
+            "modifiedDateTime": "2021-12-02T10:54:35.4869719Z",
+            "createdDateTime": "2021-05-26T11:39:10.4042489Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "208.127.0.0/16"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "137.83.225.74/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0a9774b6-40ef-49bf-9928-8cc601ec974f",
+            "displayName": "loc_Suspicious_IPAddresses",
+            "modifiedDateTime": "2021-08-03T09:44:55.2831851Z",
+            "createdDateTime": "2021-05-27T07:07:37.2191012Z",
+            "isTrusted": false,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "2.58.194.134/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "103.69.20.42/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "185.65.134.175/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "136.169.211.123/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "39.164.48.7/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "159.192.97.156/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "177.93.43.155/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "181.209.219.28/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "191.243.72.34/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "186.10.0.116/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "103.221.253.242/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "103.43.151.58/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "188.92.190.158/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "77.40.2.80/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "203.189.159.33/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "188.162.43.40/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "186.3.167.34/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "110.44.127.182/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "213.175.186.82/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "110.78.154.48/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "108.58.167.30/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "115.84.92.92/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "88.247.116.144/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "103.57.134.85/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0cb964c6-c063-41f1-abb4-99d7e1cc282b",
+            "displayName": "loc_T1Ext_1Bit",
+            "modifiedDateTime": "2022-03-08T08:11:17.2109157Z",
+            "createdDateTime": "2021-06-07T09:49:32.0493717Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "195.239.27.130/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "07231f2d-28c5-451c-91b2-7f96f8a00da2",
+            "displayName": "loc_T1Ext_PBS",
+            "modifiedDateTime": "2021-07-14T06:45:25.8491484Z",
+            "createdDateTime": "2021-07-14T06:45:25.8491484Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "84.207.239.98/27"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "053af6cf-4d92-4ebf-90ae-1f1d17b8efc7",
+            "displayName": "loc_publicIP_MexicoCity",
+            "modifiedDateTime": "2021-07-14T09:47:32.1458107Z",
+            "createdDateTime": "2021-07-14T09:47:32.1458107Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "201.174.146.210/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0688f909-d87a-4dd7-ae1f-992242783397",
+            "displayName": "loc_T1Ext_BodoPeters",
+            "modifiedDateTime": "2021-10-28T13:19:27.3792466Z",
+            "createdDateTime": "2021-07-16T12:50:38.6075652Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "91.16.119.219/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "91.16.125.242/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "87.173.188.81/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0b69178a-24c9-4c02-8b5e-2d001fdc467b",
+            "displayName": "loc_T1Ext_HPE",
+            "modifiedDateTime": "2021-09-01T14:15:40.5432083Z",
+            "createdDateTime": "2021-07-21T11:58:20.1245466Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "115.113.157.170/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "115.249.231.90/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "83.166.212.106/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "14.143.204.216/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "05d425f2-e712-4055-8129-e8fd5c08651f",
+            "displayName": "loc_T1Ext_Gemba",
+            "modifiedDateTime": "2021-07-29T07:41:42.4569094Z",
+            "createdDateTime": "2021-07-29T07:41:42.4569094Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "213.127.31.87/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "85.147.137.24/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "46.145.204.9/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "51.195.84.194/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "036ca995-30f5-44d5-ada7-e766b4312278",
+            "displayName": "loc_T1Ext_Intrafind",
+            "modifiedDateTime": "2021-07-29T14:31:10.3920491Z",
+            "createdDateTime": "2021-07-29T14:31:10.3920491Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "62.96.226.43/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "05b7c805-7b06-4f41-b0bf-792c44397940",
+            "displayName": "loc_T1Ext_Lapidaire",
+            "modifiedDateTime": "2021-08-20T12:04:26.2027756Z",
+            "createdDateTime": "2021-08-20T12:04:26.2027756Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "80.100.201.230/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0bcd77de-e0c0-4472-81d5-32715649f792",
+            "displayName": "loc_T1Ext_KommatecRed",
+            "modifiedDateTime": "2021-08-20T12:06:14.343851Z",
+            "createdDateTime": "2021-08-20T12:06:14.343851Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "217.110.247.218/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0b3344ef-f101-4da6-ad40-2205de7db6c1",
+            "displayName": "loc_ExchangeAcces_ENTW (Jana Werner)",
+            "modifiedDateTime": "2021-08-24T10:21:42.3565613Z",
+            "createdDateTime": "2021-08-24T10:21:07.667903Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "195.20.240.114/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0fc092e7-9db8-4408-a87a-df955384bd04",
+            "displayName": "loc_T1Ext_GeoData",
+            "modifiedDateTime": "2021-08-24T14:15:26.1951211Z",
+            "createdDateTime": "2021-08-24T14:15:26.1951211Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "87.138.197.64/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "049d74e6-2524-4a77-a988-def5bf26301a",
+            "displayName": "loc_azurefunctions (Marcin Wozny)",
+            "modifiedDateTime": "2021-08-25T14:52:23.181441Z",
+            "createdDateTime": "2021-08-25T14:50:37.7390267Z",
+            "isTrusted": false,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.71.13.138/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.130.173/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.131.159/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.132.114/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.133.111/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.135.229/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.200.1/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.200.134/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.202.81/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.203.13/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.203.70/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.203.88/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.201.79/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.203.104/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.203.174/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.132.36/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.203.222/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.203.247/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.204.59/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.204.82/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.204.96/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.204.100/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.204.108/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.204.145/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.204.204/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.201.191/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.204.243/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.205.28/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.205.58/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.73.205.82/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "20.50.2.48/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "05eac30a-2f47-41f4-8aba-9761c204f062",
+            "displayName": "loc_Netmedia (Marcin Wozny)",
+            "modifiedDateTime": "2021-08-25T14:52:08.6779946Z",
+            "createdDateTime": "2021-08-25T14:50:58.420921Z",
+            "isTrusted": false,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "80.149.92.2/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0a3d23b5-69a1-4ab8-b7d6-c5d48f76db2e",
+            "displayName": "loc_T1Ext_Drakos (Jana Werner)",
+            "modifiedDateTime": "2021-08-26T09:49:48.9981033Z",
+            "createdDateTime": "2021-08-26T09:49:48.9981033Z",
+            "isTrusted": false,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "217.253.61.142/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "217.253.50.143/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "026fa750-7b28-429b-a835-b71dcc39c31c",
+            "displayName": "loc_T1Ext_1cbit",
+            "modifiedDateTime": "2021-10-28T12:26:54.7109106Z",
+            "createdDateTime": "2021-09-08T07:29:47.9425249Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "31.134.187.90/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "212.232.78.144/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0e9e4b05-163a-4369-8898-f98a7c317550",
+            "displayName": "loc_T1Ext_RoQC",
+            "modifiedDateTime": "2021-09-15T12:08:38.0400048Z",
+            "createdDateTime": "2021-09-15T12:08:38.0400048Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "109.247.200.30/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "51.175.124.2/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0e9f53d8-d0fd-4c38-aef1-a70b0aa222d8",
+            "displayName": "loc_T1Ext_Zucchetti",
+            "modifiedDateTime": "2021-09-15T14:14:17.8994124Z",
+            "createdDateTime": "2021-09-15T14:14:17.8994124Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "212.89.155.86/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0e5a8db4-9603-4b8d-bbf5-9e74d7fd623a",
+            "displayName": "loc_T1Ext_Kadme",
+            "modifiedDateTime": "2022-08-23T11:36:15.2017981Z",
+            "createdDateTime": "2021-09-17T12:41:57.9480585Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "81.29.45.182/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "91.90.43.102/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "06ba0807-c795-4383-903b-55bb91ea49eb",
+            "displayName": "loc_T1Ext_Halliburton_Collins",
+            "modifiedDateTime": "2021-09-21T11:30:06.0248217Z",
+            "createdDateTime": "2021-09-21T11:30:06.0248217Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "92.27.157.19/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0b3def5a-1f04-471d-8bf3-c120076c2d12",
+            "displayName": "loc_T1Ext_IkonScience",
+            "modifiedDateTime": "2021-09-22T05:21:32.8983661Z",
+            "createdDateTime": "2021-09-22T05:21:32.8983661Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "12.157.19.162/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "195.171.24.210/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0ab3d6df-012a-4cf6-9072-6144005028da",
+            "displayName": "loc_GeoCloud",
+            "modifiedDateTime": "2022-03-03T06:57:16.2771941Z",
+            "createdDateTime": "2021-09-27T13:47:31.3744818Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "94.143.188.80/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "94.143.188.128/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "94.143.188.56/29"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "94.143.212.128/27"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "89.246.242.136/29"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "212.33.147.208/29"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "212.33.148.8/29"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "84.52.101.184/29"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "85.91.112.21/27"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "93.153.223.8/29"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "41.33.0.160/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "41.65.240.128/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "85.143.207.50/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0f9ef712-0d59-4b4a-89e6-71754f71abc7",
+            "displayName": "loc_T1Ext_DoIT-Now",
+            "modifiedDateTime": "2022-03-08T09:37:27.8656173Z",
+            "createdDateTime": "2021-10-07T05:24:37.3887954Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "80.14.16.185/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "90.48.240.125/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0671a93e-4b6d-4a24-aeac-67a7de7b5891",
+            "displayName": "loc_T1Ext_MoraeGlobal",
+            "modifiedDateTime": "2021-10-12T09:36:06.5478513Z",
+            "createdDateTime": "2021-10-12T09:36:06.5478513Z",
+            "isTrusted": false,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "161.199.155.0/24"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "09a3531c-5102-4778-ad19-1aceb65b1886",
+            "displayName": "loc_T1Ext_AgileDD",
+            "modifiedDateTime": "2021-10-13T11:39:18.7198058Z",
+            "createdDateTime": "2021-10-13T11:39:18.7198058Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "108.250.10.206/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "82.66.57.66/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "88.121.7.162/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0fcd25a8-8f1c-4152-b973-f9f00444946b",
+            "displayName": "loc_T1Ext_Lucidworks",
+            "modifiedDateTime": "2022-01-28T12:48:12.5797541Z",
+            "createdDateTime": "2021-10-13T11:40:03.0213031Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "2.103.22.110/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "167.98.100.132/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "219.75.91.15/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0827103e-0122-4a23-9fc2-ae3f92cdd8f7",
+            "displayName": "loc_T1Ext_SoftwareOne",
+            "modifiedDateTime": "2022-07-08T11:29:59.0398926Z",
+            "createdDateTime": "2021-10-19T13:04:54.1305844Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "37.201.144.71/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "37.201.147.203/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "37.201.146.238/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "37.201.147.122/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "77.109.145.250/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "08b86502-cf8b-458c-96fa-827615c6392e",
+            "displayName": "loc_T1Ext_SteinhausIT",
+            "modifiedDateTime": "2021-10-25T12:32:32.1108294Z",
+            "createdDateTime": "2021-10-25T12:32:32.1108294Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "88.79.89.58/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "88.79.89.59/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "88.79.89.60/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "88.79.89.61/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "88.79.89.62/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "78.94.135.130/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "78.94.135.131/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "78.94.135.132/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "78.94.135.133/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "78.94.135.134/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+            "displayName": "loc_WD_VPN_GER",
+            "modifiedDateTime": "2021-11-17T07:51:40.5440331Z",
+            "createdDateTime": "2021-11-10T07:53:14.6091169Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "94.134.188.80/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "94.134.188.128/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "94.134.212.128/27"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "195.167.221.56/29"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "89.246.242.136/29"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "83.135.19.43/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0ed37a4c-cedf-4fdb-82a7-46fe84774bad",
+            "displayName": "loc_WD_VPN_NOR",
+            "modifiedDateTime": "2021-11-10T07:59:34.8502669Z",
+            "createdDateTime": "2021-11-10T07:57:35.1596314Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "77.241.100.192/27"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "212.33.147.208/29"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "212.33.148.8/29"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0ec7e7cd-95b3-4dc1-ac97-9ea1dccb342a",
+            "displayName": "loc_WD_VPN_BRA",
+            "modifiedDateTime": "2021-11-10T08:00:15.7230363Z",
+            "createdDateTime": "2021-11-10T08:00:15.7230363Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "189.126.204.96/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "200.142.100.176/28"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0853ba1d-c8bf-419f-8e2c-ca64a553f461",
+            "displayName": "loc_WD_VPN_ARG",
+            "modifiedDateTime": "2021-11-10T08:01:15.7097425Z",
+            "createdDateTime": "2021-11-10T08:01:15.7097425Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "200.7.187.80/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "200.7.187.64/28"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "03b5ffec-1605-44b3-914b-9944c8a81b1d",
+            "displayName": "loc_WD_VPN_MEX",
+            "modifiedDateTime": "2021-11-10T08:04:27.690248Z",
+            "createdDateTime": "2021-11-10T08:04:27.690248Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "201.174.146.192/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "201.174.146.208/28"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0b45e60e-1557-4e9f-8a26-cbf9ddd1678e",
+            "displayName": "loc_WD_VPN_RUS",
+            "modifiedDateTime": "2021-11-12T14:37:26.9831931Z",
+            "createdDateTime": "2021-11-10T08:06:27.1920206Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "84.52.101.184/29"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "85.91.112.32/27"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "93.153.223.8/29"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "85.143.207.48/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "62.152.51.144/28"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "09d03ff7-8b0c-428f-9e4b-ab3ec82cfb22",
+            "displayName": "loc_T1Ext_NetMedia",
+            "modifiedDateTime": "2021-12-02T10:53:55.9536613Z",
+            "createdDateTime": "2021-12-01T12:32:34.9168484Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "80.149.92.2/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "027cb158-e15d-47b8-9f93-fd008a051c65",
+            "displayName": "loc_BASF_AIP_Mig",
+            "modifiedDateTime": "2021-12-02T10:55:53.9405919Z",
+            "createdDateTime": "2021-12-02T10:55:53.9405919Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "137.83.225.74/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "01610050-e115-49a5-8690-85b4ff602cb4",
+            "displayName": "loc_GKGab_SOC",
+            "modifiedDateTime": "2021-12-02T12:46:02.3680322Z",
+            "createdDateTime": "2021-12-02T12:46:02.3680322Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "51.105.97.173/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0bc91f68-9884-4d1c-b3b9-0bb00a264e5b",
+            "displayName": "loc_WD_Brage",
+            "modifiedDateTime": "2021-12-21T14:53:16.9320221Z",
+            "createdDateTime": "2021-12-21T14:53:16.9320221Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "88.135.71.0/24"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0ee07160-b46b-4ac4-848d-cb5ac64e2687",
+            "displayName": "loc_T1Ext_Schlumberger",
+            "modifiedDateTime": "2022-01-03T09:19:32.8630541Z",
+            "createdDateTime": "2022-01-03T09:19:32.8630541Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "212.33.144.250/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "03af3760-2505-4b71-adfb-18f895b28446",
+            "displayName": "loc_T1Ext_Cegal",
+            "modifiedDateTime": "2022-01-18T08:51:24.048712Z",
+            "createdDateTime": "2022-01-18T08:51:24.048712Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "93.124.249.128/26"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "004414ec-46b0-4d81-9d45-4ffc0348bac7",
+            "displayName": "loc_GeoCloud_RUS",
+            "modifiedDateTime": "2022-03-02T06:42:07.3892331Z",
+            "createdDateTime": "2022-03-02T06:35:12.1415077Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "62.152.51.144/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "85.91.112.32/27"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "07f51a28-98e2-4c51-8970-1b916796cff0",
+            "displayName": "loc_GeoCloud_ARG",
+            "modifiedDateTime": "2022-03-02T06:35:59.7329002Z",
+            "createdDateTime": "2022-03-02T06:35:59.7329002Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "200.7.187.64/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "200.7.187.80/28"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "059262f8-b4d7-4d4e-b287-55496cba398f",
+            "displayName": "loc_GeoCloud_MEX",
+            "modifiedDateTime": "2022-03-02T06:37:08.7243778Z",
+            "createdDateTime": "2022-03-02T06:37:08.7243778Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "201.174.146.208/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "201.174.146.192/28"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "077e85d5-3add-4a5d-b833-d76aca0f32ea",
+            "displayName": "loc_GeoCloud_BRA",
+            "modifiedDateTime": "2022-03-02T06:37:53.217435Z",
+            "createdDateTime": "2022-03-02T06:37:53.217435Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "189.126.204.96/28"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "200.142.100.176/28"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "090778fc-fc66-46c6-a346-c0132b4af9e1",
+            "displayName": "loc_GeoCloud_GER",
+            "modifiedDateTime": "2022-03-02T06:38:27.2792561Z",
+            "createdDateTime": "2022-03-02T06:38:27.2792561Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "94.134.212.128/27"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "08e11e19-8f83-481c-9d0f-dc43a47e6ffe",
+            "displayName": "loc_GeoCloud_NOR",
+            "modifiedDateTime": "2022-03-02T06:38:59.1104121Z",
+            "createdDateTime": "2022-03-02T06:38:59.1104121Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "77.241.100.192/27"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "04ce7112-5f14-4b06-9d4f-84b12bd4191a",
+            "displayName": "loc_GeoCloud_EGY",
+            "modifiedDateTime": "2022-03-02T06:43:03.0644037Z",
+            "createdDateTime": "2022-03-02T06:43:03.0644037Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "196.219.52.200/29"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "82.129.193.16/28"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0839388a-72f5-4c9f-95a2-92e83537a813",
+            "displayName": "loc_T1Ext_FME",
+            "modifiedDateTime": "2022-03-08T08:21:15.4950722Z",
+            "createdDateTime": "2022-03-08T08:21:15.4950722Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "145.253.124.50/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0eb7291c-6162-42ca-854b-d44cc346b113",
+            "displayName": "loc_DEA",
+            "modifiedDateTime": "2022-03-22T14:08:08.1468069Z",
+            "createdDateTime": "2022-03-22T14:08:08.1468069Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "194.39.1.132/32"
+                },
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "194.39.0.26/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "0929aa8d-4321-4e2b-a1b1-6d089191cb99",
+            "displayName": "loc_T1Ext_IntelligentOperationsAS",
+            "modifiedDateTime": "2022-03-23T11:56:23.4089706Z",
+            "createdDateTime": "2022-03-23T11:56:23.4089706Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "79.161.218.112/28"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "052159e0-616d-43c7-a841-1a708fe9a753",
+            "displayName": "loc_T1Ext_Goodtech",
+            "modifiedDateTime": "2022-04-27T08:22:52.2875258Z",
+            "createdDateTime": "2022-04-27T08:22:52.2875258Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "92.221.251.58/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "037719b9-0729-4582-98a7-16385eceec06",
+            "displayName": "loc_T1Ext_Versatec",
+            "modifiedDateTime": "2022-05-09T08:17:34.6525805Z",
+            "createdDateTime": "2022-05-09T08:17:34.6525805Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "52.174.181.213/32"
+                }
+            ]
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "06b3faae-466e-48b2-aea7-fff9e1bf9d20",
+            "displayName": "loc_T1Ext_Larga",
+            "modifiedDateTime": "2022-09-12T15:19:55.5424999Z",
+            "createdDateTime": "2022-09-12T15:19:55.5424999Z",
+            "isTrusted": true,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "81.24.123.67/32"
+                }
+            ]
+        }
+    ]
+}

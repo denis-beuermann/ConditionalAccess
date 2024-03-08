@@ -1,0 +1,11 @@
+{
+    "@odata.type": "#microsoft.graph.ipNamedLocation",
+    "displayName": "loc_T1Ext_Versatec",
+    "isTrusted": true,
+    "ipRanges": [
+        {
+            "@odata.type": "#microsoft.graph.iPv4CidrRange",
+            "cidrAddress": "52.174.181.213/32"
+        }
+    ]
+}

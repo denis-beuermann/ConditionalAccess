@@ -1,0 +1,54 @@
+{ 
+    "displayName": "Mobile 3 - Require compliant device for sensitive apps", 
+    "state": "enabled", 
+    "conditions": { 
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        "clientAppTypes": [
+            "mobileAppsAndDesktopClients",
+            "browser"
+        ],
+        "locations": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "platforms": {
+            "includePlatforms": [
+                "iOS",
+                "android"
+            ],
+            "excludePlatforms": [
+                
+            ]
+        },
+        "applications": { 
+            "includeApplications": [ 
+                "cb631f06-ab10-4c93-8478-c81a7674cd1a",
+                "8cd924bb-28f9-46b5-b0e1-52ea5e74e501",
+                "588ccc0c-1cd3-4ea1-a63a-63539bd0a8a6",
+                "698241d5-3d8b-45b7-93bd-bd3a7fd7db47"
+            ],
+            "excludeApplications": [
+            ]
+        }, 
+        "users": {
+            "includeUsers": [
+                "All"
+            ],
+            "excludeUsers": [
+                "GuestsOrExternalUsers"
+            ],
+            "includeGroups": [
+            ], 
+            "excludeGroups": [ 
+                "307c4c83-25ac-4bd6-8552-a07d1a6d6e9d"
+            ] 
+        }
+    }, 
+    "grantControls": { 
+        "operator": "OR", 
+        "builtInControls": [ 
+             "compliantDevice"
+        ] 
+    } 
+}

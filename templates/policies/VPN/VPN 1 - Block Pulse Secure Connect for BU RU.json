@@ -1,0 +1,53 @@
+{
+    "displayName": "VPN 1 - Block Pulse Secure Connect for BU RU",
+    "state": "enabled",
+    "sessionControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "all"
+        ],
+        "servicePrincipalRiskLevels": [],
+        "locations": null,
+        "times": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "03318c91-f2d1-4179-a703-2338e0fe3de3",
+                "f167ba52-4003-44a7-99d2-c7272931e2ec",
+                "04e9629b-97e9-4929-a2fc-436cef10eb2b",
+                "2a55d553-356b-49f1-80de-093843fa8a0e",
+                "484be971-d060-48da-b193-c8b5b0474ba5"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": []
+        },
+        "users": {
+            "includeUsers": [
+            ],
+            "excludeUsers": [],
+            "includeGroups": [
+                "8aced846-845b-4c0f-a170-717db02ebb3e"
+            ],
+            "excludeGroups": [            ],
+            "includeRoles": [],
+            "excludeRoles": []
+        },
+        "platforms": {
+            "includePlatforms": [
+                "all"
+            ],
+            "excludePlatforms": []
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "block"
+        ]
+    } 
+}

@@ -1,0 +1,63 @@
+{
+    "id": "e23df2ae-5744-442b-96c9-d2ae101cb811",
+    "displayName": "CloudPAW.CA.RequireCompliantDevice",
+    "createdDateTime": null,
+    "modifiedDateTime": "2021-04-23T06:05:04.0174655Z",
+    "state": "enabled",
+    "sessionControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "browser",
+            "mobileAppsAndDesktopClients"
+        ],
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": []
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [
+                "19dcf438-0d7e-40d3-b9ef-f34c0ff086c2"
+            ],
+            "includeGroups": [
+                "260b2a9d-50c2-41f7-a71f-b447a06c9314"
+            ],
+            "excludeGroups": [
+                "6f53f0e7-ca6b-4bd5-9da7-d559215cd1fe"
+            ],
+            "includeRoles": [],
+            "excludeRoles": []
+        },
+        "platforms": {
+            "includePlatforms": [
+                "windows"
+            ],
+            "excludePlatforms": []
+        },
+        "locations": {
+            "includeLocations": [
+                "All"
+            ],
+            "excludeLocations": [
+                "72f7432d-571f-461d-a14a-5ab878901699"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "compliantDevice"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+    }
+}

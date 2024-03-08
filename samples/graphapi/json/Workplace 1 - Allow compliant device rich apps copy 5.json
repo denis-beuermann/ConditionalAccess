@@ -1,0 +1,42 @@
+{ 
+    "displayName": "Workplace 1 - Allow compliant device rich apps", 
+    "state": "disabled", 
+    "conditions": { 
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        "clientAppTypes": [
+            "mobileAppsAndDesktopClients"
+        ],
+        "platforms": {
+            "includePlatforms": [
+                "All"
+            ],
+            "excludePlatforms": [
+                "iOS",
+                "android"
+            ]
+        },
+        "applications": { 
+            "includeApplications": [ 
+                "All" 
+            ],
+            "excludeApplications": [
+                "d4ebce55-015a-49b5-a083-c84d1797ae8c"
+            ]
+        }, 
+        "users": { 
+            "includeGroups": [ 
+                "6c96716b-b32b-40b8-9009-49748bb6fcd5"
+            ], 
+            "excludeGroups": [ 
+                 
+            ] 
+        }
+    }, 
+    "grantControls": { 
+        "operator": "OR", 
+        "builtInControls": [ 
+             "compliantDevice"
+        ] 
+    } 
+}

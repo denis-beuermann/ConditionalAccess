@@ -1,0 +1,53 @@
+{
+    "displayName": "DevOps.PerUserMfaTransition",
+    "state": "enabled",
+    "conditions": {
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        "platforms": [],
+        "clientAppTypes": [
+            "browser",
+            "mobileAppsAndDesktopClients"
+        ],
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [
+                "793af81f-25f2-435b-baa2-d2b5277f79b3",
+                "372140e0-b3b7-4226-8ef9-d57986796201",
+                "9cdead84-a844-4324-93f2-b2e6bb768d07",
+                "fa4345a4-a730-4230-84a8-7d9651b86739",
+                "213caee7-0491-4149-8083-be7d617a8e67"
+             ]
+        },
+        "users": { 
+            "includeUsers": [
+            ],
+            "excludeUsers": [
+                "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                "45493151-3540-4d48-b311-6b98ec68f9b4",
+                "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                "2300ccc8-2124-4937-84f0-3a63872af609"
+            ],
+            "includeGroups": [ 
+                "c62f7bfe-a349-4ccc-8326-0808c9282a28"
+            ], 
+            "excludeGroups": [
+                     
+            ],
+            "includeRoles": [    
+            ],
+            "excludeRoles": [
+                
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "AND",
+        "builtInControls": [
+            "mfa"
+        ]
+    }
+}

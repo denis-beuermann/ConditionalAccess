@@ -1,0 +1,109 @@
+{
+    "displayName": "CA_T1Ext_AllowedIPRanges",
+    "state": "enabled",
+    "sessionControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "browser",
+            "mobileAppsAndDesktopClients"
+        ],
+        "platforms": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": []
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [],
+            "includeGroups": [
+                "a216d6c7-af11-4b01-8dab-63869ade1577"
+            ],
+            "excludeGroups": [],
+            "includeRoles": [],
+            "excludeRoles": []
+        },
+        "locations": {
+            "includeLocations": [
+                "All"
+            ],
+            "excludeLocations": [
+                "06b3faae-466e-48b2-aea7-fff9e1bf9d20",
+                "01f87633-7474-41d5-9e7c-b5b09d70a6e0",
+                "01610050-e115-49a5-8690-85b4ff602cb4",
+                "ec9796dc-57e5-4cb5-9de7-0dfa94e139be",
+                "7a336803-67af-4915-bf19-5769249c4a5d",
+                "0cb964c6-c063-41f1-abb4-99d7e1cc282b",
+                "026fa750-7b28-429b-a835-b71dcc39c31c",
+                "09a3531c-5102-4778-ad19-1aceb65b1886",
+                "0a093868-9109-4937-ad22-ec394cb4faa0",
+                "0688f909-d87a-4dd7-ae1f-992242783397",
+                "0f9ef712-0d59-4b4a-89e6-71754f71abc7",
+                "0a3d23b5-69a1-4ab8-b7d6-c5d48f76db2e",
+                "0f530bb3-61e6-4798-a54b-2d2c87a6de96",
+                "06f81030-21d4-4dec-9038-bdf5af107d9d",
+                "0927acba-68fc-4346-b4bb-32110fe21c6b",
+                "db379825-3f2e-4bb4-bb77-b3326343790c",
+                "05d425f2-e712-4055-8129-e8fd5c08651f",
+                "0fc092e7-9db8-4408-a87a-df955384bd04",
+                "04333b93-40f0-41dc-a02f-674f397b4301",
+                "0bfda018-6899-44bd-af62-cb316233660b",
+                "087219f6-34f4-4776-8512-b32954552fbd",
+                "72f7432d-571f-461d-a14a-5ab878901699",
+                "e485b90e-de3d-4627-a2ce-ad7975210142",
+                "06ba0807-c795-4383-903b-55bb91ea49eb",
+                "0b69178a-24c9-4c02-8b5e-2d001fdc467b",
+                "f065f14e-4397-427b-8cd4-eeeb4e7f3104",
+                "0b3def5a-1f04-471d-8bf3-c120076c2d12",
+                "036ca995-30f5-44d5-ada7-e766b4312278",
+                "8603c1fe-ac1c-4553-a09d-6a2389466fe7",
+                "0e5a8db4-9603-4b8d-bbf5-9e74d7fd623a",
+                "0bcd77de-e0c0-4472-81d5-32715649f792",
+                "05b7c805-7b06-4f41-b0bf-792c44397940",
+                "0fcd25a8-8f1c-4152-b973-f9f00444946b",
+                "0671a93e-4b6d-4a24-aeac-67a7de7b5891",
+                "09d03ff7-8b0c-428f-9e4b-ab3ec82cfb22",
+                "11b57b4b-f815-4c91-8a70-e0ca96ad71a0",
+                "07231f2d-28c5-451c-91b2-7f96f8a00da2",
+                "075a5479-3c49-4279-baf3-19b48ad9328b",
+                "d3d88004-d3a2-40eb-b521-bd7e965fb99e",
+                "94e81408-26cd-42ca-adc4-cd426012d936",
+                "0e9e4b05-163a-4369-8898-f98a7c317550",
+                "0ee07160-b46b-4ac4-848d-cb5ac64e2687",
+                "223879fe-d9ca-486c-b9c6-ae4c2fcfae60",
+                "40fc9098-d4fa-4ae6-9fa5-c0e688c84e9e",
+                "0827103e-0122-4a23-9fc2-ae3f92cdd8f7",
+                "08b86502-cf8b-458c-96fa-827615c6392e",
+                "d2807515-a7e7-4f80-90f7-c1ebcd765465",
+                "0e9f53d8-d0fd-4c38-aef1-a70b0aa222d8",
+                "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                "0853ba1d-c8bf-419f-8e2c-ca64a553f461",
+                "0ec7e7cd-95b3-4dc1-ac97-9ea1dccb342a",
+                "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                "03b5ffec-1605-44b3-914b-9944c8a81b1d",
+                "0ed37a4c-cedf-4fdb-82a7-46fe84774bad",
+                "0b45e60e-1557-4e9f-8a26-cbf9ddd1678e",
+                "0839388a-72f5-4c9f-95a2-92e83537a813",
+                "0929aa8d-4321-4e2b-a1b1-6d089191cb99",
+                "052159e0-616d-43c7-a841-1a708fe9a753",
+                "037719b9-0729-4582-98a7-16385eceec06"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "block"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "id": "5d8a9e78-4bec-437d-91e6-2e35549f0354",
+    "displayName": "Win10 Client_CA_Browser_Token_Life_time",
+    "createdDateTime": null,
+    "modifiedDateTime": "2021-03-09T14:36:32.5885822Z",
+    "state": "enabled",
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "browser"
+        ],
+        "platforms": null,
+        "locations": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [
+            ],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": []
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [
+                "f5a1adf8-be9d-4237-b911-78aba30f5c4c"
+            ],
+            "includeGroups": [
+                "0231bc61-3eb9-442a-88dd-f17d1c7f4596"
+            ],
+            "excludeGroups": [
+                "4481a73c-1d71-46f2-abc7-b5e31495cbfe",
+                "0543dced-5ecd-49eb-9f6d-cc36469c59ba",
+                "1ea119cd-9bef-4c18-ae3e-0c7c113607e7",
+                "5e769024-0f21-4be0-af23-dd6045caa1c9"
+            ],
+            "includeRoles": [],
+            "excludeRoles": []
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+    },
+    "sessionControls": {
+        "applicationEnforcedRestrictions": null,
+        "cloudAppSecurity": null,
+        "persistentBrowser": null,
+        "signInFrequency": {
+            "value": 1,
+            "type": "days",
+            "isEnabled": true
+        }
+    }
+}

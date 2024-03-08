@@ -1,0 +1,48 @@
+{
+    "displayName": "Workplace 2 - Allow non-compliant Browser to O365 with MFA and Session Controls",
+    "state": "disabled",
+    "conditions": {
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        "clientAppTypes": [
+            "browser"
+        ],
+        "platforms": {
+            "includePlatforms": [
+                "All"
+            ],
+            "excludePlatforms": [
+                "iOS",
+                "android"
+            ]
+        },
+        "applications": {
+            "includeApplications": [
+                "Office365"
+            ]
+        },
+        "users": {
+            "includeGroups": [
+                "6c96716b-b32b-40b8-9009-49748bb6fcd5"
+            ],
+            "excludeGroups": []
+        },
+        "devices": {
+            "includeDeviceStates": [],
+            "excludeDeviceStates": [],
+            "includeDevices": [
+                "All"
+            ],
+            "excludeDevices": [
+                "Compliant"
+            ],
+            "deviceFilter": null
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ]
+    }
+}

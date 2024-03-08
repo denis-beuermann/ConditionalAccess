@@ -1,0 +1,50 @@
+{ 
+    "displayName": "User Risk 2 - Block Access", 
+    "state": "enabled", 
+    "conditions": { 
+        "signInRiskLevels": [],
+        "userRiskLevels": [
+            "high"
+        ],
+        "clientAppTypes": [
+            "All"
+        ],
+        "platforms": [],
+        "applications": { 
+            "includeApplications": [ 
+                "All" 
+            ],
+            "excludeApplications": [
+            ]
+        }, 
+        "users": { 
+            "includeUsers": [
+            ],
+            "excludeUsers": [
+                "GuestsOrExternalUsers",
+                "45493151-3540-4d48-b311-6b98ec68f9b4",
+                "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                "2300ccc8-2124-4937-84f0-3a63872af609",
+                "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                "bcbd220c-9cda-4371-8b21-59715a06de5c",
+                "386c7341-e0a7-409d-8517-4a1760ebad0f"
+            ],
+            "includeGroups": [
+                "32740b8e-b5cf-436e-894c-81e5018243bc"
+            ], 
+            "excludeGroups": [  
+            ],
+            "includeRoles": [    
+            ],
+            "excludeRoles": [
+            ]
+        }
+    }, 
+    "grantControls": { 
+        "operator": "OR", 
+        "builtInControls": [ 
+             "block"
+        ] 
+    } 
+}

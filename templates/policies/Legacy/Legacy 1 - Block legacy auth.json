@@ -1,0 +1,34 @@
+{
+    "displayName": "Legacy 1 - Block legacy auth",
+    "state": "enabled",
+    "conditions": {
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        "clientAppTypes": [
+            "exchangeActiveSync",
+            "other"
+        ],
+        "applications": {
+            "includeApplications": [
+                "All"
+            ]
+        },
+        "users": {
+            "includeUsers":[
+                "All"
+            ],
+            "excludeUsers": [],
+            "includeGroups": [
+            ],
+            "excludeGroups": [
+                "6424e446-c617-4f23-89f5-ec2d7fe08922"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "block"
+        ]
+    }
+}

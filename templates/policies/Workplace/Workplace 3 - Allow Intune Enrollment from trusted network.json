@@ -1,0 +1,69 @@
+{
+    "displayName": "Workplace 3 - Allow Intune Enrollment from trusted network",
+    "state": "enabledForReportingButNotEnforced",
+    "sessionControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "browser"
+        ],
+        "servicePrincipalRiskLevels": [],
+        "signInRiskDetections": null,
+        "times": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "0000000a-0000-0000-c000-000000000000",
+                "d4ebce55-015a-49b5-a083-c84d1797ae8c"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": [],
+            "applicationFilter": null,
+            "networkAccess": null
+        },
+        "users": {
+            "includeUsers": [
+                "All"
+            ],
+            "excludeUsers": [],
+            "includeGroups": [],
+            "excludeGroups": [],
+            "includeRoles": [],
+            "excludeRoles": [],
+            "includeGuestsOrExternalUsers": null,
+            "excludeGuestsOrExternalUsers": null
+        },
+        "platforms": {
+            "includePlatforms": [
+                "macOS"
+            ],
+            "excludePlatforms": [
+                "android",
+                "iOS"
+            ]
+        },
+        "locations": {
+            "includeLocations": [
+                "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                "dafe857a-f92e-4763-a785-e01520c5f6e3"
+            ],
+            "excludeLocations": []
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": [],
+        "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('4bf10912-4cc6-421b-a4ac-23335e2db70f')/grantControls/authenticationStrength/$entity",
+        "authenticationStrength": null
+    }
+}

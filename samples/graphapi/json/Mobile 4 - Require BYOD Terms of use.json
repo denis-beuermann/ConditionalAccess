@@ -1,0 +1,43 @@
+{ 
+    "displayName": "Mobile 4 - Require BYOD Terms of use", 
+    "state": "disabled", 
+    "conditions": { 
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        "clientAppTypes": [
+            "All"
+        ],
+        "platforms": {
+            "includePlatforms": [
+                "iOS",
+                "android"
+            ],
+            "excludePlatforms": [
+               
+            ]
+        },
+        "applications": { 
+            "includeApplications": [ 
+                "All" 
+            ],
+            "excludeApplications": [
+            ]
+        }, 
+        "users": { 
+            "includeGroups": [ 
+                "6c96716b-b32b-40b8-9009-49748bb6fcd5"
+            ], 
+            "excludeGroups": [ 
+                 
+            ] 
+        }
+    }, 
+    "grantControls": { 
+        "operator": "OR", 
+        "builtInControls": [
+        ],
+        "termsOfUse": [
+            "3d229027-700b-4330-b9c1-baf7a00d6a15"
+        ]
+    } 
+}

@@ -1,0 +1,63 @@
+{ 
+    "displayName": "Mobile 2 - Require compliant device or approved client app for all apps", 
+    "state": "enabled", 
+    "conditions": { 
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        
+        "clientAppTypes": [
+            "mobileAppsAndDesktopClients",
+            "browser"
+        ],
+        "platforms": {
+            "includePlatforms": [
+                "iOS",
+                "android"
+            ],
+            "excludePlatforms": []
+        },
+        "applications": { 
+            "includeApplications": [ 
+                "All"
+            ],
+            "excludeApplications": [
+                "e3007d4d-d79e-4321-b07b-5abe69880eba",
+                "ef65ff6a-9875-4300-971f-c09d8b2b427c",
+                "588ccc0c-1cd3-4ea1-a63a-63539bd0a8a6",
+                "698241d5-3d8b-45b7-93bd-bd3a7fd7db47"
+            ]
+        }, 
+        "users": { 
+            "includeUsers": [
+                "All"
+            ],
+            "excludeUsers": [
+                "GuestsOrExternalUsers",
+                "341c038b-8062-4b8c-8e0e-29bb2a6c22eb",
+                "42a3089b-5c63-49e1-bb18-9fbd7f7c9dc2",
+                "2d966ad2-113b-43b4-9f60-8393caa356e6",
+                "ccd1cbe0-680b-45a5-b946-72ecbec7525f",
+                "f29db645-5b4d-4e83-b361-8171f959bcb9",
+                "cd9d5ac2-40f9-492b-a2db-ad8f8600360d",
+                "bcad553e-fda5-40ca-b3c8-7a34b92aba86",
+                "96ca05e4-2b5b-4cc2-baf1-817a52b06023",
+                "82a30159-82c1-4973-a0ab-91e372a9b006",
+                "0e99ca4a-3d49-47ec-b7f7-1e45c7c094b3",
+                "b1e430b8-9d65-4247-9273-b5c19dbcf10a",
+                "d4744a97-110c-421d-9a10-e84e1af94509"
+            ],
+            "includeGroups": [ 
+            ], 
+            "excludeGroups": [ 
+                "307c4c83-25ac-4bd6-8552-a07d1a6d6e9d"
+            ] 
+        }
+    }, 
+    "grantControls": { 
+        "operator": "OR", 
+        "builtInControls": [ 
+             "approvedApplication",
+             "compliantDevice"
+        ] 
+    } 
+}

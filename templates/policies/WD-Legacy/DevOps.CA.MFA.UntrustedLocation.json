@@ -1,0 +1,61 @@
+{
+    "id": "d05f5834-46bb-4f36-8d63-684c30c6ab77",
+    "displayName": "CA.MFA.UntrustedLocation",
+    "createdDateTime": "2021-01-06T15:44:26.6087687Z",
+    "modifiedDateTime": "2021-01-20T12:34:24.2271834Z",
+    "state": "enabled",
+    "sessionControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "all"
+        ],
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": []
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [],
+            "includeGroups": [
+                "0543dced-5ecd-49eb-9f6d-cc36469c59ba"
+            ],
+            "excludeGroups": [
+                "5e769024-0f21-4be0-af23-dd6045caa1c9"
+            ],
+            "includeRoles": [],
+            "excludeRoles": []
+        },
+        "platforms": {
+            "includePlatforms": [
+                "all"
+            ],
+            "excludePlatforms": []
+        },
+        "locations": {
+            "includeLocations": [
+                "All"
+            ],
+            "excludeLocations": [
+                "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                "ee2a45c5-220b-4123-a663-d8ba2e241bc2"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+    }
+}

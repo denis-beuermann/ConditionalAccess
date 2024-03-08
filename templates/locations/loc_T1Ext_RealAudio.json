@@ -1,0 +1,15 @@
+{
+    "@odata.type": "#microsoft.graph.ipNamedLocation",
+    "displayName": "loc_T1Ext_RealAudio",
+    "isTrusted": true,
+    "ipRanges": [
+        {
+            "@odata.type": "#microsoft.graph.iPv4CidrRange",
+            "cidrAddress": "37.24.209.170/32"
+        },
+        {
+            "@odata.type": "#microsoft.graph.iPv4CidrRange",
+            "cidrAddress": "82.198.64.217/32"
+        }
+    ]
+}

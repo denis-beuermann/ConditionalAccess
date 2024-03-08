@@ -1,0 +1,52 @@
+{ 
+    "displayName": "Mobile 4 - Require MFA for all Users", 
+    "state": "enabled", 
+    "conditions": { 
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        "clientAppTypes": [
+            "mobileAppsAndDesktopClients",
+            "browser"
+        ],
+        "locations": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "platforms": {
+            "includePlatforms": [
+                "iOS",
+                "android"
+            ],
+            "excludePlatforms": [
+                
+            ]
+        },
+        "applications": { 
+            "includeApplications": [ 
+                "All" 
+            ],
+            "excludeApplications": [
+                
+            ]
+        }, 
+        "users": {
+            "includeUsers": [
+                "All"
+            ],
+            "excludeUsers": [
+                "GuestsOrExternalUsers"
+            ],
+            "includeGroups": [ 
+            ], 
+            "excludeGroups": [ 
+                "307c4c83-25ac-4bd6-8552-a07d1a6d6e9d"
+            ] 
+        }
+    }, 
+    "grantControls": { 
+        "operator": "OR", 
+        "builtInControls": [ 
+             "mfa"
+        ] 
+    } 
+}

@@ -1,0 +1,23 @@
+variables:
+- name: vmImage
+  value: ubuntu-20.04
+- name: PS4TaskAzurePowerShellVersion
+  value: OtherVersion
+- name: PS4TaskPreferredAzurePowerShellVersion
+  value: 4.8.0
+- name: moduleName
+  value: ConditionalAccess
+- name: modulePath
+  value: deploy
+- name: templatePath
+  value: 'templates'
+- name: location
+  value: westeurope
+- name: serviceConnection
+  value: S00-WD-SP-ADO-SC-Tier0
+- name: clientId
+  value: 120123f4-0bbc-4f41-a78a-b8bad19c2573
+- name: templateName
+  value: 'loc_T1Ext_Larga.json'
+- group: vg.s00.rg-weu-p-security
+  

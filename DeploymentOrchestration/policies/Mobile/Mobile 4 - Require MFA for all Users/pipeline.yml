@@ -1,0 +1,66 @@
+name: $(templateName)
+variables:
+  - template: pipeline.variables.yml
+
+trigger:
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - 'templates/policies/Mobile/Mobile 4 - Require MFA for all Users.json'
+
+stages:
+- stage: Build
+  jobs:
+  - job: 'Build_Artifacts'
+    displayName: 'Build Artifacts'
+    pool: 
+      vmImage: 'ubuntu-20.04'
+    variables: 
+    - template: pipeline.variables.yml
+    steps:
+    - task: CopyFiles@2
+      displayName: 'Copy Artifacts Files'
+      inputs:
+        contents: |
+          **/*.json
+          **/*.ps1
+        SourceFolder: '$(Build.SourcesDirectory)'
+        TargetFolder: '$(Build.ArtifactStagingDirectory)/$(BuildId)'
+        flattenFolders: false
+        CleanTargetFolders: true
+        OverWrite: true
+
+    - task: PublishBuildArtifacts@1
+      enabled: true
+      displayName: 'Publish $(moduleName) Artifacts'
+      inputs:
+        targetPath: '$(Build.ArtifactStagingDirectory)/$(BuildId)'
+        artifact: drop
+
+- stage: Deployment
+  jobs:
+  - job: DeployTemplate
+    displayName: Deploy Template
+    pool:
+      ${{ if ne(variables['vmImage'], '') }}:
+        vmImage: $(vmImage)
+      ${{ if ne(variables['poolName'], '') }}:
+        name: $(poolName)
+    steps:
+      - task: DownloadPipelineArtifact@2
+        displayName: 'Download Artifact'
+        inputs:
+          source: 'current'
+          artifact: 'drop'
+          path: '$(Pipeline.Workspace)'
+
+      - task: AzurePowerShell@4
+        displayName: Deploy template on $(resourceGroupName)
+        inputs:
+          azureSubscription: '$(serviceConnection)'
+          ScriptType: filePath
+          ScriptPath: '$(Pipeline.Workspace)/$(BuildId)/deploy/DevOps-ConditionalAccess.ps1'
+          azurePowerShellVersion: LatestVersion
+          ScriptArguments: -clientId '$(clientId)' -clientSecret '$(GraphApi-ConditionalAccess)' -templateName '$(Pipeline.Workspace)/$(BuildId)/templates/policies/Mobile/$(templateName)'

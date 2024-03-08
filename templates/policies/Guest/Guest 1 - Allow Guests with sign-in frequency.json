@@ -1,0 +1,47 @@
+{
+    "displayName": "Guest 1 - Allow Guests with sign-in frequency",
+    "state": "enabled",
+    "conditions": {
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "mobileAppsAndDesktopClients",
+            "browser"
+        ],
+        "platforms": {
+            "includePlatforms": [
+                "All"
+            ],
+            "excludePlatforms": [
+            ]
+        },
+        "applications": {
+            "includeApplications": [
+                "All"
+            ]
+        },
+        "users": {
+            "includeUsers": [
+                "GuestsOrExternalUsers"
+            ],
+            "excludeUsers": [
+
+            ],
+            "includeGroups": [
+            ],
+            "excludeGroups": []
+        }
+    },
+    "sessionControls": {
+        "applicationEnforcedRestrictions": null,
+        "cloudAppSecurity": null,
+        "signInFrequency": {
+            "value": 8,
+            "type": "hours",
+            "isEnabled": true
+        },
+        "persistentBrowser": {
+            "mode": "never",
+            "isEnabled": true
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{ 
+    "displayName": "Mobile 5 - Require compliant device for Office 365 on MDM devices", 
+    "state": "enabled", 
+    "conditions": { 
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        "clientAppTypes": [
+            "mobileAppsAndDesktopClients",
+            "browser"
+        ],
+        "platforms": {
+            "includePlatforms": [
+                "iOS",
+                "android"
+            ],
+            "excludePlatforms": [
+               
+            ]
+        },
+        "applications": { 
+            "includeApplications": [ 
+                "Office365" 
+            ],
+            "excludeApplications": [
+            
+            ]
+        }, 
+        "users": { 
+            "includeUsers": [
+                "All"
+            ],
+            "excludeUsers": [
+                "GuestsOrExternalUsers"
+            ],
+            "includeGroups": [ 
+            ], 
+            "excludeGroups": [ 
+                "307c4c83-25ac-4bd6-8552-a07d1a6d6e9d"
+            ] 
+        },
+        "devices": {
+            "includeDeviceStates": [],
+            "excludeDeviceStates": [],
+            "includeDevices": [],
+            "excludeDevices": [],
+            "deviceFilter": {
+                "mode": "include",
+                "rule": "device.deviceOwnership -eq \"Personal\" -or device.deviceOwnership -eq \"Company\""
+            }
+        }
+    }, 
+    "grantControls": { 
+        "operator": "OR", 
+        "builtInControls": [
+            "compliantDevice"
+        ]
+    } 
+}

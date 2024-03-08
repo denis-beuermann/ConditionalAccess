@@ -1,0 +1,3587 @@
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies",
+    "value": [
+        {
+            "id": "0244d44c-0313-435d-8b1c-6e76ac0138ad",
+            "displayName": "Mobile 2 - Require compliant device or approved client app for all apps",
+            "createdDateTime": "2021-08-09T13:42:21.1483644Z",
+            "modifiedDateTime": "2023-01-25T11:54:38.512832Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "mobileAppsAndDesktopClients",
+                    "browser"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [
+                        "e3007d4d-d79e-4321-b07b-5abe69880eba",
+                        "ef65ff6a-9875-4300-971f-c09d8b2b427c",
+                        "588ccc0c-1cd3-4ea1-a63a-63539bd0a8a6",
+                        "698241d5-3d8b-45b7-93bd-bd3a7fd7db47"
+                    ],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "All"
+                    ],
+                    "excludeUsers": [
+                        "GuestsOrExternalUsers",
+                        "341c038b-8062-4b8c-8e0e-29bb2a6c22eb",
+                        "42a3089b-5c63-49e1-bb18-9fbd7f7c9dc2",
+                        "2d966ad2-113b-43b4-9f60-8393caa356e6",
+                        "ccd1cbe0-680b-45a5-b946-72ecbec7525f",
+                        "f29db645-5b4d-4e83-b361-8171f959bcb9",
+                        "cd9d5ac2-40f9-492b-a2db-ad8f8600360d",
+                        "bcad553e-fda5-40ca-b3c8-7a34b92aba86",
+                        "96ca05e4-2b5b-4cc2-baf1-817a52b06023",
+                        "82a30159-82c1-4973-a0ab-91e372a9b006",
+                        "0e99ca4a-3d49-47ec-b7f7-1e45c7c094b3",
+                        "b1e430b8-9d65-4247-9273-b5c19dbcf10a",
+                        "d4744a97-110c-421d-9a10-e84e1af94509"
+                    ],
+                    "includeGroups": [],
+                    "excludeGroups": [
+                        "307c4c83-25ac-4bd6-8552-a07d1a6d6e9d"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": {
+                        "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+                        "externalTenants": {
+                            "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+                            "membershipKind": "all"
+                        }
+                    }
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "iOS",
+                        "android"
+                    ],
+                    "excludePlatforms": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "approvedApplication",
+                    "compliantDevice"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('0244d44c-0313-435d-8b1c-6e76ac0138ad')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "0c6fd791-abb3-415c-8943-7fd2a4a2fad7",
+            "displayName": "CA_T2Ext_AllowedIPRanges",
+            "createdDateTime": "2021-06-25T08:59:00.3557522Z",
+            "modifiedDateTime": "2022-03-23T13:57:35.1674646Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser",
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [
+                        "db593d80-4fe7-4212-801b-809f983405ef"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "01f87633-7474-41d5-9e7c-b5b09d70a6e0",
+                        "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                        "0853ba1d-c8bf-419f-8e2c-ca64a553f461",
+                        "0ec7e7cd-95b3-4dc1-ac97-9ea1dccb342a",
+                        "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                        "03b5ffec-1605-44b3-914b-9944c8a81b1d",
+                        "0ed37a4c-cedf-4fdb-82a7-46fe84774bad",
+                        "0b45e60e-1557-4e9f-8a26-cbf9ddd1678e",
+                        "03af3760-2505-4b71-adfb-18f895b28446"
+                    ]
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('0c6fd791-abb3-415c-8943-7fd2a4a2fad7')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "16f14a58-881d-4f1b-b2af-9d9d7811ef45",
+            "displayName": "CA_TR_SOCAdmin",
+            "createdDateTime": null,
+            "modifiedDateTime": "2021-12-02T13:32:37.9043006Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser",
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [
+                        "239832f9-e6c2-492b-8427-bbec0286b48c",
+                        "af449d02-6747-4c0e-9885-69a37c8c5c20"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "all"
+                    ],
+                    "excludePlatforms": []
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "11b57b4b-f815-4c91-8a70-e0ca96ad71a0",
+                        "d2807515-a7e7-4f80-90f7-c1ebcd765465",
+                        "01610050-e115-49a5-8690-85b4ff602cb4"
+                    ]
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('16f14a58-881d-4f1b-b2af-9d9d7811ef45')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "19e503cf-f21d-4aa0-9f7b-e47fc9a59c8b",
+            "displayName": "User Actions 1 - Require MFA to Join Devices",
+            "createdDateTime": "2021-05-12T06:20:05.0890839Z",
+            "modifiedDateTime": "2021-06-18T11:13:06.725462Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [],
+                    "excludeApplications": [],
+                    "includeUserActions": [
+                        "urn:user:registerdevice"
+                    ],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "All"
+                    ],
+                    "excludeUsers": [
+                        "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                        "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                        "45493151-3540-4d48-b311-6b98ec68f9b4",
+                        "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                        "2300ccc8-2124-4937-84f0-3a63872af609"
+                    ],
+                    "includeGroups": [],
+                    "excludeGroups": [
+                        "307c4c83-25ac-4bd6-8552-a07d1a6d6e9d",
+                        "0c58eb53-bd5b-4cfa-b8ea-15f969fd911b",
+                        "4a037dbc-3108-412c-82e2-e51296c0ea08",
+                        "8d9b0486-70d1-4e10-8692-1002c6854423",
+                        "2977eef8-8838-4b9b-b556-6cbe56b30342"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "mfa"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('19e503cf-f21d-4aa0-9f7b-e47fc9a59c8b')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "28dbb34d-bf98-4434-a28a-8f0e668bd889",
+            "displayName": "Guest 1 - Allow Guests with sign-in frequency",
+            "createdDateTime": "2021-04-07T07:56:37.5740199Z",
+            "modifiedDateTime": "2022-10-05T08:51:10.6519166Z",
+            "state": "enabled",
+            "grantControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "mobileAppsAndDesktopClients",
+                    "browser"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "GuestsOrExternalUsers"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "all"
+                    ],
+                    "excludePlatforms": []
+                }
+            },
+            "sessionControls": {
+                "disableResilienceDefaults": false,
+                "applicationEnforcedRestrictions": null,
+                "cloudAppSecurity": null,
+                "continuousAccessEvaluation": null,
+                "secureSignInSession": null,
+                "signInFrequency": {
+                    "value": 8,
+                    "type": "hours",
+                    "authenticationType": "primaryAndSecondaryAuthentication",
+                    "frequencyInterval": "timeBased",
+                    "isEnabled": true
+                },
+                "persistentBrowser": {
+                    "mode": "never",
+                    "isEnabled": true
+                }
+            }
+        },
+        {
+            "id": "32c4041d-1d1f-4428-9bac-41d5d84b6991",
+            "displayName": "Admin 1 - Require compliant device",
+            "createdDateTime": "2021-03-23T15:28:30.2931128Z",
+            "modifiedDateTime": "2023-04-27T00:02:51.6661021Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser",
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [
+                        "a4a365df-50f1-4397-bc59-1a1564b8bb9c",
+                        "9cdead84-a844-4324-93f2-b2e6bb768d07",
+                        "d4ebce55-015a-49b5-a083-c84d1797ae8c"
+                    ],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [
+                        "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                        "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                        "45493151-3540-4d48-b311-6b98ec68f9b4",
+                        "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                        "2300ccc8-2124-4937-84f0-3a63872af609",
+                        "58941a10-492a-46c2-b6c3-b215e0306e31"
+                    ],
+                    "includeGroups": [
+                        "efcbff71-7ea4-4134-9063-dad950548ef1"
+                    ],
+                    "excludeGroups": [
+                        "a0553820-cc4a-4256-9992-42a153ca4413",
+                        "0216fb01-188f-4676-8079-af5ac19418af"
+                    ],
+                    "includeRoles": [
+                        "62e90394-69f5-4237-9190-012177145e10",
+                        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                        "75941009-915a-4869-abe7-691bff18279e"
+                    ],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "all"
+                    ],
+                    "excludePlatforms": [
+                        "android",
+                        "iOS",
+                        "macOS",
+                        "linux"
+                    ]
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "compliantDevice",
+                    "domainJoinedDevice"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('32c4041d-1d1f-4428-9bac-41d5d84b6991')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "49d8ab9b-783c-4ea2-a451-0b69efd2665f",
+            "displayName": "Legacy 2 - Block legacy auth",
+            "createdDateTime": "2021-03-17T23:23:55.1232197Z",
+            "modifiedDateTime": "2021-05-07T15:05:24.1115419Z",
+            "state": "enabledForReportingButNotEnforced",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "exchangeActiveSync",
+                    "other"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "All"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "AllTrusted"
+                    ]
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('49d8ab9b-783c-4ea2-a451-0b69efd2665f')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "5da053b7-6023-4fdd-a02b-dd0fae20db23",
+            "displayName": "Sign-in Risk 2 - Block Access",
+            "createdDateTime": "2021-05-15T17:55:19.220587Z",
+            "modifiedDateTime": "2021-09-22T07:48:13.8418256Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [
+                    "high"
+                ],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [
+                        "GuestsOrExternalUsers",
+                        "45493151-3540-4d48-b311-6b98ec68f9b4",
+                        "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                        "2300ccc8-2124-4937-84f0-3a63872af609",
+                        "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                        "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                        "bcbd220c-9cda-4371-8b21-59715a06de5c",
+                        "386c7341-e0a7-409d-8517-4a1760ebad0f"
+                    ],
+                    "includeGroups": [
+                        "32740b8e-b5cf-436e-894c-81e5018243bc"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('5da053b7-6023-4fdd-a02b-dd0fae20db23')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "5fe87566-6f45-46c9-836e-c8951fdbf022",
+            "displayName": "User Risk 1 - Require Password Reset",
+            "createdDateTime": "2021-05-12T12:59:43.413243Z",
+            "modifiedDateTime": "2021-09-22T07:43:31.9187623Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [
+                    "high"
+                ],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "All"
+                    ],
+                    "excludeUsers": [
+                        "GuestsOrExternalUsers",
+                        "45493151-3540-4d48-b311-6b98ec68f9b4",
+                        "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                        "2300ccc8-2124-4937-84f0-3a63872af609",
+                        "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                        "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                        "bcbd220c-9cda-4371-8b21-59715a06de5c",
+                        "386c7341-e0a7-409d-8517-4a1760ebad0f"
+                    ],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                }
+            },
+            "grantControls": {
+                "operator": "AND",
+                "builtInControls": [
+                    "mfa",
+                    "passwordChange"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('5fe87566-6f45-46c9-836e-c8951fdbf022')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "61bd991b-d0f8-41d8-9ae5-c185872e742b",
+            "displayName": "Mobile 6 - Block Mobile",
+            "createdDateTime": "2021-04-06T21:51:55.2549333Z",
+            "modifiedDateTime": "2021-11-16T16:01:17.0496213Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "mobileAppsAndDesktopClients",
+                    "browser"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [
+                        "f5ec4aaa-e33e-4562-bb83-6f014478cbab",
+                        "4db7708c-ae5e-470e-bdce-f1e410a21a6b"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "iOS",
+                        "android"
+                    ],
+                    "excludePlatforms": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('61bd991b-d0f8-41d8-9ae5-c185872e742b')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "64400bfe-fd65-4a75-be0f-9c48371bba76",
+            "displayName": "CA_T1Ext_AllowedIPRanges",
+            "createdDateTime": null,
+            "modifiedDateTime": "2023-03-30T06:11:15.7499895Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser",
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [
+                        "a216d6c7-af11-4b01-8dab-63869ade1577"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "01f87633-7474-41d5-9e7c-b5b09d70a6e0",
+                        "01610050-e115-49a5-8690-85b4ff602cb4",
+                        "ec9796dc-57e5-4cb5-9de7-0dfa94e139be",
+                        "7a336803-67af-4915-bf19-5769249c4a5d",
+                        "09a3531c-5102-4778-ad19-1aceb65b1886",
+                        "0688f909-d87a-4dd7-ae1f-992242783397",
+                        "0f9ef712-0d59-4b4a-89e6-71754f71abc7",
+                        "0f530bb3-61e6-4798-a54b-2d2c87a6de96",
+                        "06f81030-21d4-4dec-9038-bdf5af107d9d",
+                        "0927acba-68fc-4346-b4bb-32110fe21c6b",
+                        "db379825-3f2e-4bb4-bb77-b3326343790c",
+                        "0839388a-72f5-4c9f-95a2-92e83537a813",
+                        "05d425f2-e712-4055-8129-e8fd5c08651f",
+                        "0fc092e7-9db8-4408-a87a-df955384bd04",
+                        "04333b93-40f0-41dc-a02f-674f397b4301",
+                        "0bfda018-6899-44bd-af62-cb316233660b",
+                        "052159e0-616d-43c7-a841-1a708fe9a753",
+                        "72f7432d-571f-461d-a14a-5ab878901699",
+                        "e485b90e-de3d-4627-a2ce-ad7975210142",
+                        "06ba0807-c795-4383-903b-55bb91ea49eb",
+                        "0b69178a-24c9-4c02-8b5e-2d001fdc467b",
+                        "f065f14e-4397-427b-8cd4-eeeb4e7f3104",
+                        "0b3def5a-1f04-471d-8bf3-c120076c2d12",
+                        "0929aa8d-4321-4e2b-a1b1-6d089191cb99",
+                        "036ca995-30f5-44d5-ada7-e766b4312278",
+                        "8603c1fe-ac1c-4553-a09d-6a2389466fe7",
+                        "0e5a8db4-9603-4b8d-bbf5-9e74d7fd623a",
+                        "0bcd77de-e0c0-4472-81d5-32715649f792",
+                        "05b7c805-7b06-4f41-b0bf-792c44397940",
+                        "06b3faae-466e-48b2-aea7-fff9e1bf9d20",
+                        "0fcd25a8-8f1c-4152-b973-f9f00444946b",
+                        "0671a93e-4b6d-4a24-aeac-67a7de7b5891",
+                        "09d03ff7-8b0c-428f-9e4b-ab3ec82cfb22",
+                        "11b57b4b-f815-4c91-8a70-e0ca96ad71a0",
+                        "07231f2d-28c5-451c-91b2-7f96f8a00da2",
+                        "075a5479-3c49-4279-baf3-19b48ad9328b",
+                        "d3d88004-d3a2-40eb-b521-bd7e965fb99e",
+                        "94e81408-26cd-42ca-adc4-cd426012d936",
+                        "0e9e4b05-163a-4369-8898-f98a7c317550",
+                        "0ee07160-b46b-4ac4-848d-cb5ac64e2687",
+                        "40fc9098-d4fa-4ae6-9fa5-c0e688c84e9e",
+                        "d2807515-a7e7-4f80-90f7-c1ebcd765465",
+                        "037719b9-0729-4582-98a7-16385eceec06",
+                        "0e9f53d8-d0fd-4c38-aef1-a70b0aa222d8",
+                        "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                        "0853ba1d-c8bf-419f-8e2c-ca64a553f461",
+                        "0ec7e7cd-95b3-4dc1-ac97-9ea1dccb342a",
+                        "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                        "03b5ffec-1605-44b3-914b-9944c8a81b1d",
+                        "0ed37a4c-cedf-4fdb-82a7-46fe84774bad",
+                        "0b45e60e-1557-4e9f-8a26-cbf9ddd1678e"
+                    ]
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('64400bfe-fd65-4a75-be0f-9c48371bba76')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "66190637-5584-43c8-ac89-10ad1c7557c8",
+            "displayName": "CloudPAW.CA.Allow",
+            "createdDateTime": null,
+            "modifiedDateTime": "2022-06-20T19:44:29.6585902Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser",
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [
+                        "0000000a-0000-0000-c000-000000000000"
+                    ],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [
+                        "f5ec4aaa-e33e-4562-bb83-6f014478cbab",
+                        "4db7708c-ae5e-470e-bdce-f1e410a21a6b"
+                    ],
+                    "excludeGroups": [
+                        "efcbff71-7ea4-4134-9063-dad950548ef1"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "mfa",
+                    "compliantDevice"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('66190637-5584-43c8-ac89-10ad1c7557c8')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "677e0b99-f362-4e61-83a1-c61e6573785c",
+            "displayName": "VPN 2 - Block Pulse Secure Connect RU for all except BU RU",
+            "createdDateTime": "2022-03-02T08:36:29.2060512Z",
+            "modifiedDateTime": "2022-03-04T15:52:10.5768417Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "e6838b8d-a434-4448-8820-803f15c800b2"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "All"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [
+                        "8aced846-845b-4c0f-a170-717db02ebb3e"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "all"
+                    ],
+                    "excludePlatforms": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('677e0b99-f362-4e61-83a1-c61e6573785c')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "71ed4f65-24d2-48c9-a610-795aad350e93",
+            "displayName": "Mobile 1 - Require approved client apps for Office 365 except EXO",
+            "createdDateTime": "2021-03-21T18:22:10.2892609Z",
+            "modifiedDateTime": "2022-11-22T07:53:39.7263944Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "mobileAppsAndDesktopClients",
+                    "browser"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "Office365"
+                    ],
+                    "excludeApplications": [
+                        "00000002-0000-0ff1-ce00-000000000000"
+                    ],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "All"
+                    ],
+                    "excludeUsers": [
+                        "GuestsOrExternalUsers"
+                    ],
+                    "includeGroups": [],
+                    "excludeGroups": [
+                        "307c4c83-25ac-4bd6-8552-a07d1a6d6e9d"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": {
+                        "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+                        "externalTenants": {
+                            "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+                            "membershipKind": "all"
+                        }
+                    }
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "iOS",
+                        "android"
+                    ],
+                    "excludePlatforms": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "approvedApplication"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('71ed4f65-24d2-48c9-a610-795aad350e93')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "73f4c22c-1249-4420-b6c5-c74b5149b963",
+            "displayName": "CA_AllowExchangefromTrustedIPs",
+            "createdDateTime": "2021-08-24T10:27:54.5164905Z",
+            "modifiedDateTime": "2021-08-25T09:48:08.3755991Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "Office365"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "b0e39232-c464-465a-8a84-efa91380fcd3"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "0b3344ef-f101-4da6-ad40-2205de7db6c1"
+                    ]
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('73f4c22c-1249-4420-b6c5-c74b5149b963')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "75bf83d8-106d-472a-9608-4d223a3e24c2",
+            "displayName": "Admin X - Tier0 - Block non-PAW devices",
+            "createdDateTime": "2023-01-04T15:11:42.7230331Z",
+            "modifiedDateTime": "2023-04-24T12:32:50.9252474Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [
+                        "46e398de-06a0-435c-a77d-5b2f274723e0"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [
+                        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                        "62e90394-69f5-4237-9190-012177145e10"
+                    ],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "devices": {
+                    "includeDeviceStates": [],
+                    "excludeDeviceStates": [],
+                    "includeDevices": [],
+                    "excludeDevices": [],
+                    "deviceFilter": {
+                        "mode": "exclude",
+                        "rule": "device.displayName -startsWith \"CPAWT0\" -or device.displayName -startsWith \"SAZ0003\" -or device.displayName -startsWith \"SAZ0004\" -or device.displayName -startsWith \"SAZ0012\" -or device.displayName -startsWith \"SAZ0011\""
+                    }
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('75bf83d8-106d-472a-9608-4d223a3e24c2')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "75d5ced7-b0ac-417e-8082-c0fd337c59fb",
+            "displayName": "Guest 2 - Require MFA from critical Guests",
+            "createdDateTime": "2021-04-06T15:16:22.6855078Z",
+            "modifiedDateTime": "2021-05-20T09:29:39.4377772Z",
+            "state": "enabledForReportingButNotEnforced",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "mobileAppsAndDesktopClients",
+                    "browser"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [
+                        "bed30a62-40fe-4ab0-a4b1-76021e6734c7"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "all"
+                    ],
+                    "excludePlatforms": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "mfa"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('75d5ced7-b0ac-417e-8082-c0fd337c59fb')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "7e0089ab-fb4c-417e-bab9-674403e6558d",
+            "displayName": "Travelmanagement Apps",
+            "createdDateTime": "2021-11-29T08:49:59.2402592Z",
+            "modifiedDateTime": "2022-01-10T11:45:51.9502418Z",
+            "state": "enabled",
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "e3007d4d-d79e-4321-b07b-5abe69880eba",
+                        "ef65ff6a-9875-4300-971f-c09d8b2b427c"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [
+                        "f3507e8e-065f-4c7b-a2f1-2d9d796a335b"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "android",
+                        "iOS"
+                    ],
+                    "excludePlatforms": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "mfa"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('7e0089ab-fb4c-417e-bab9-674403e6558d')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            },
+            "sessionControls": {
+                "disableResilienceDefaults": false,
+                "applicationEnforcedRestrictions": null,
+                "cloudAppSecurity": null,
+                "persistentBrowser": null,
+                "continuousAccessEvaluation": null,
+                "secureSignInSession": null,
+                "signInFrequency": {
+                    "value": 2,
+                    "type": "hours",
+                    "authenticationType": "primaryAndSecondaryAuthentication",
+                    "frequencyInterval": "timeBased",
+                    "isEnabled": true
+                }
+            }
+        },
+        {
+            "id": "7e45ab1d-3f78-4af7-8a27-2f3c3dfd9932",
+            "displayName": "CA_SharepointAutomation_Netmedia",
+            "createdDateTime": "2021-08-25T14:51:32.5534659Z",
+            "modifiedDateTime": null,
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "ac3a1031-1ee5-4221-821c-53989c3ff9fd"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "05eac30a-2f47-41f4-8aba-9761c204f062",
+                        "049d74e6-2524-4a77-a988-def5bf26301a"
+                    ]
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('7e45ab1d-3f78-4af7-8a27-2f3c3dfd9932')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "8477c0b0-f077-4fd7-b6c6-72988e663af1",
+            "displayName": "CA_SharepointMigration",
+            "createdDateTime": null,
+            "modifiedDateTime": "2022-09-13T14:28:05.5340009Z",
+            "state": "disabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "exchangeActiveSync",
+                    "browser",
+                    "mobileAppsAndDesktopClients",
+                    "other"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "951b13c7-634c-457c-a1ab-7213b1979083",
+                        "2921ad5f-7a81-4fa9-87ec-9e2716e887b1",
+                        "049e96da-c31f-42b3-afc6-ff4bdf8166c8"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "89920cc3-cf02-40eb-9591-d6eb7f498c9f"
+                    ]
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('8477c0b0-f077-4fd7-b6c6-72988e663af1')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "8c235bd8-7124-4f3c-a7e1-ca8dba5daae4",
+            "displayName": "Mobile 4 - Require MFA for all Users",
+            "createdDateTime": "2021-03-22T14:38:03.4810999Z",
+            "modifiedDateTime": "2022-09-05T08:32:16.9789531Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "mobileAppsAndDesktopClients",
+                    "browser"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "All"
+                    ],
+                    "excludeUsers": [
+                        "GuestsOrExternalUsers"
+                    ],
+                    "includeGroups": [],
+                    "excludeGroups": [
+                        "307c4c83-25ac-4bd6-8552-a07d1a6d6e9d"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "iOS",
+                        "android"
+                    ],
+                    "excludePlatforms": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "mfa"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('8c235bd8-7124-4f3c-a7e1-ca8dba5daae4')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "8d771290-ddce-4538-96bb-29771f387853",
+            "displayName": "CA_AtosAzureAdmin",
+            "createdDateTime": null,
+            "modifiedDateTime": "2021-11-10T08:27:22.2939796Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser",
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [
+                        "a0553820-cc4a-4256-9992-42a153ca4413"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                        "0853ba1d-c8bf-419f-8e2c-ca64a553f461",
+                        "0ec7e7cd-95b3-4dc1-ac97-9ea1dccb342a",
+                        "03b5ffec-1605-44b3-914b-9944c8a81b1d",
+                        "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                        "0ed37a4c-cedf-4fdb-82a7-46fe84774bad",
+                        "0b45e60e-1557-4e9f-8a26-cbf9ddd1678e"
+                    ]
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('8d771290-ddce-4538-96bb-29771f387853')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "8df9d151-6704-4f2b-96e7-c38e8f5b77b1",
+            "displayName": "Admin 2 - Require MFA",
+            "createdDateTime": "2021-03-23T15:51:55.1753388Z",
+            "modifiedDateTime": "2023-04-24T12:32:01.719761Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser",
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [
+                        "1697d0cd-1d83-4d0b-9b5d-b8f49fb4ddac",
+                        "7e7fcaed-8aaa-4e00-ad22-54b33f21f5ef",
+                        "372140e0-b3b7-4226-8ef9-d57986796201",
+                        "9d6e8ad9-05a5-47d7-b0ee-73dc3e3e1013"
+                    ],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [
+                        "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                        "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                        "45493151-3540-4d48-b311-6b98ec68f9b4",
+                        "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                        "2300ccc8-2124-4937-84f0-3a63872af609",
+                        "58941a10-492a-46c2-b6c3-b215e0306e31",
+                        "ac3a1031-1ee5-4221-821c-53989c3ff9fd",
+                        "386c7341-e0a7-409d-8517-4a1760ebad0f",
+                        "eacdd02a-0d64-4b40-856b-747108477ec7",
+                        "45782562-243c-4e1e-a5ba-89e253c9d814"
+                    ],
+                    "includeGroups": [
+                        "efcbff71-7ea4-4134-9063-dad950548ef1"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [
+                        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                        "cf1c38e5-3621-4004-a7cb-879624dced7c",
+                        "9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f",
+                        "c430b396-e693-46cc-96f3-db01bf8bb62a",
+                        "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                        "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+                        "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+                        "e3973bdf-4987-49ae-837a-ba8e231c7286",
+                        "7495fdc4-34c4-4d15-a289-98788ce399fd",
+                        "aaf43236-0c0d-4d5f-883a-6955382ac081",
+                        "3edaf663-341e-4475-9f94-5c398ef6c070",
+                        "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+                        "158c047a-c907-4556-b7ef-446551a6b5f7",
+                        "7698a772-787b-4ac8-901f-60d6b08affd2",
+                        "17315797-102d-40b4-93e0-432062caca18",
+                        "e6d1a23a-da11-4be4-9570-befc86d067a7",
+                        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                        "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91",
+                        "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4",
+                        "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+                        "d29b2b05-8046-44ba-8758-1e26182fcf32",
+                        "9360feb5-f418-4baa-8175-e2a00bac4301",
+                        "8329153b-31d0-4727-b945-745eb3bc5f31",
+                        "44367163-eba1-44c3-98af-f5787879f96a",
+                        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+                        "6e591065-9bad-43ed-90f3-e9424366d2f0",
+                        "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+                        "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+                        "62e90394-69f5-4237-9190-012177145e10",
+                        "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+                        "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+                        "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+                        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+                        "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+                        "eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c",
+                        "31e939ad-9672-4796-9c2e-873181342d2d",
+                        "3a2c62db-5318-420d-8d74-23affee5d9d5",
+                        "74ef975b-6605-40af-a5d2-b9539d836353",
+                        "b5a8dcf3-09d5-43a9-a639-8e29ef291470",
+                        "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+                        "ac16e43d-7b2d-40e0-ac05-243ff356ab5b",
+                        "790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b",
+                        "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
+                        "2b745bdf-0803-4d80-aa65-822c4493daac",
+                        "966707d0-3269-4727-9be2-8c3a10f19b9d",
+                        "a9ea8996-122f-4c74-9520-8edcd192826c",
+                        "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+                        "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f",
+                        "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477",
+                        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+                        "e8611ab8-c189-46e8-94e1-60213ab1f814",
+                        "fe930be7-5e62-47db-91af-98c3a49a38b1",
+                        "75934031-6c7e-415a-99d7-48dbd49e875e",
+                        "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+                        "fcf91098-03e3-41a9-b5ba-6f0ec8188a12",
+                        "f70938a0-fc10-4177-9e90-2178f8765737",
+                        "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+                        "69091246-20e8-4a56-aa4d-066075b2a7a8",
+                        "75941009-915a-4869-abe7-691bff18279e",
+                        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+                        "f023fd81-a637-4b56-95fd-791ac0226033",
+                        "5d6b6bb7-de71-4623-b4af-96380a352509",
+                        "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+                        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                        "8835291a-918c-4fd7-a9ce-faa49f0cf7d9",
+                        "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+                        "4a5d8f65-41da-4de4-8968-e035b65339cf"
+                    ],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "mfa"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('8df9d151-6704-4f2b-96e7-c38e8f5b77b1')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "8e20a513-5080-4f23-bc62-a4ceb48a9560",
+            "displayName": "Block suspicious locations",
+            "createdDateTime": "2021-04-29T13:39:39.0435579Z",
+            "modifiedDateTime": "2021-11-10T08:07:19.178506Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [
+                        "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                        "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                        "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                        "45493151-3540-4d48-b311-6b98ec68f9b4"
+                    ],
+                    "includeGroups": [
+                        "0231bc61-3eb9-442a-88dd-f17d1c7f4596"
+                    ],
+                    "excludeGroups": [
+                        "3db305ac-db86-47c0-9900-d469f964d803",
+                        "c38e7e13-8373-4ab3-84eb-f8f4a850d3b0"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "locations": {
+                    "includeLocations": [
+                        "0a9774b6-40ef-49bf-9928-8cc601ec974f",
+                        "16d3ac61-01ae-4c48-a79d-979497c5450f"
+                    ],
+                    "excludeLocations": []
+                }
+            },
+            "grantControls": {
+                "operator": "AND",
+                "builtInControls": [
+                    "mfa",
+                    "compliantDevice"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('8e20a513-5080-4f23-bc62-a4ceb48a9560')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "8fa3e900-76ec-4cc2-be97-d151efb15c32",
+            "displayName": "Workplace 3 - Block non-compliant Browser to other apps",
+            "createdDateTime": "2021-03-13T08:05:22.6557192Z",
+            "modifiedDateTime": "2023-03-07T11:00:08.8816146Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "times": null,
+                "deviceStates": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [
+                        "793af81f-25f2-435b-baa2-d2b5277f79b3",
+                        "08cdcd5d-56e5-45bc-b45f-fedf2b044046",
+                        "9cdead84-a844-4324-93f2-b2e6bb768d07",
+                        "8a6617e7-e51c-442c-b078-5145465c69ab",
+                        "c5a6d2b5-d179-47a6-b367-e8308836e169",
+                        "810c222e-77e2-43db-b919-a15fafa9f00c",
+                        "f0375a1e-f41b-4019-a0c1-54a79268a2f3",
+                        "73d61a3c-095e-4f50-b4f4-78f7abb43b0c",
+                        "3db940d6-d5c4-4ebf-9bbc-57f7af87e0ec",
+                        "0000000a-0000-0000-c000-000000000000",
+                        "d4ebce55-015a-49b5-a083-c84d1797ae8c",
+                        "ee7b6895-a138-4a9c-b806-8368fc1d9ae1",
+                        "a4a365df-50f1-4397-bc59-1a1564b8bb9c",
+                        "Office365"
+                    ],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [
+                        "45493151-3540-4d48-b311-6b98ec68f9b4",
+                        "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                        "2300ccc8-2124-4937-84f0-3a63872af609",
+                        "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                        "dafe857a-f92e-4763-a785-e01520c5f6e3"
+                    ],
+                    "includeGroups": [
+                        "5e769024-0f21-4be0-af23-dd6045caa1c9"
+                    ],
+                    "excludeGroups": [
+                        "4db7708c-ae5e-470e-bdce-f1e410a21a6b",
+                        "f5ec4aaa-e33e-4562-bb83-6f014478cbab",
+                        "0c58eb53-bd5b-4cfa-b8ea-15f969fd911b"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [
+                        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                        "cf1c38e5-3621-4004-a7cb-879624dced7c",
+                        "9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f",
+                        "c430b396-e693-46cc-96f3-db01bf8bb62a",
+                        "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                        "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+                        "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+                        "e3973bdf-4987-49ae-837a-ba8e231c7286",
+                        "7495fdc4-34c4-4d15-a289-98788ce399fd",
+                        "aaf43236-0c0d-4d5f-883a-6955382ac081",
+                        "3edaf663-341e-4475-9f94-5c398ef6c070",
+                        "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+                        "158c047a-c907-4556-b7ef-446551a6b5f7",
+                        "7698a772-787b-4ac8-901f-60d6b08affd2",
+                        "17315797-102d-40b4-93e0-432062caca18",
+                        "e6d1a23a-da11-4be4-9570-befc86d067a7",
+                        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                        "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91",
+                        "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4",
+                        "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+                        "d29b2b05-8046-44ba-8758-1e26182fcf32",
+                        "9360feb5-f418-4baa-8175-e2a00bac4301",
+                        "8329153b-31d0-4727-b945-745eb3bc5f31",
+                        "44367163-eba1-44c3-98af-f5787879f96a",
+                        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+                        "6e591065-9bad-43ed-90f3-e9424366d2f0",
+                        "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+                        "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+                        "62e90394-69f5-4237-9190-012177145e10",
+                        "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+                        "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+                        "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+                        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+                        "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+                        "eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c",
+                        "31e939ad-9672-4796-9c2e-873181342d2d",
+                        "3a2c62db-5318-420d-8d74-23affee5d9d5",
+                        "74ef975b-6605-40af-a5d2-b9539d836353",
+                        "b5a8dcf3-09d5-43a9-a639-8e29ef291470",
+                        "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+                        "ac16e43d-7b2d-40e0-ac05-243ff356ab5b",
+                        "790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b",
+                        "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
+                        "2b745bdf-0803-4d80-aa65-822c4493daac",
+                        "966707d0-3269-4727-9be2-8c3a10f19b9d",
+                        "a9ea8996-122f-4c74-9520-8edcd192826c",
+                        "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+                        "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f",
+                        "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477",
+                        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+                        "e8611ab8-c189-46e8-94e1-60213ab1f814",
+                        "fe930be7-5e62-47db-91af-98c3a49a38b1",
+                        "75934031-6c7e-415a-99d7-48dbd49e875e",
+                        "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+                        "fcf91098-03e3-41a9-b5ba-6f0ec8188a12",
+                        "f70938a0-fc10-4177-9e90-2178f8765737",
+                        "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+                        "69091246-20e8-4a56-aa4d-066075b2a7a8",
+                        "75941009-915a-4869-abe7-691bff18279e",
+                        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+                        "f023fd81-a637-4b56-95fd-791ac0226033",
+                        "5d6b6bb7-de71-4623-b4af-96380a352509",
+                        "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+                        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                        "8835291a-918c-4fd7-a9ce-faa49f0cf7d9",
+                        "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+                        "4a5d8f65-41da-4de4-8968-e035b65339cf"
+                    ],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": {
+                        "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+                        "externalTenants": {
+                            "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+                            "membershipKind": "all"
+                        }
+                    }
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "all"
+                    ],
+                    "excludePlatforms": [
+                        "android",
+                        "iOS"
+                    ]
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "0ab3d6df-012a-4cf6-9072-6144005028da",
+                        "07f51a28-98e2-4c51-8970-1b916796cff0",
+                        "077e85d5-3add-4a5d-b833-d76aca0f32ea",
+                        "04ce7112-5f14-4b06-9d4f-84b12bd4191a",
+                        "090778fc-fc66-46c6-a346-c0132b4af9e1",
+                        "059262f8-b4d7-4d4e-b287-55496cba398f",
+                        "08e11e19-8f83-481c-9d0f-dc43a47e6ffe",
+                        "004414ec-46b0-4d81-9d45-4ffc0348bac7",
+                        "664e049c-ea80-4b31-af74-e75e2fc6721b",
+                        "dcb11a9f-71f0-4ba8-a0b8-363bb2cf1c2c",
+                        "0bc91f68-9884-4d1c-b3b9-0bb00a264e5b",
+                        "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                        "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                        "d2807515-a7e7-4f80-90f7-c1ebcd765465"
+                    ]
+                },
+                "devices": {
+                    "includeDeviceStates": [],
+                    "excludeDeviceStates": [],
+                    "includeDevices": [],
+                    "excludeDevices": [],
+                    "deviceFilter": {
+                        "mode": "exclude",
+                        "rule": "device.isCompliant -eq True"
+                    }
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('8fa3e900-76ec-4cc2-be97-d151efb15c32')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "97e4c3c2-a92a-4140-a995-9a434543c463",
+            "displayName": "Emulates Legacy MFA configuration (User based MFA))",
+            "createdDateTime": "2021-04-04T10:14:23.9905673Z",
+            "modifiedDateTime": "2022-09-14T10:50:17.3325208Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser",
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [
+                        "f2e6d6b5-0aac-4059-a65d-808c70dd3f7f",
+                        "213caee7-0491-4149-8083-be7d617a8e67",
+                        "372140e0-b3b7-4226-8ef9-d57986796201",
+                        "793af81f-25f2-435b-baa2-d2b5277f79b3",
+                        "9cdead84-a844-4324-93f2-b2e6bb768d07",
+                        "fa4345a4-a730-4230-84a8-7d9651b86739"
+                    ],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [
+                        "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                        "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                        "45493151-3540-4d48-b311-6b98ec68f9b4",
+                        "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                        "2300ccc8-2124-4937-84f0-3a63872af609"
+                    ],
+                    "includeGroups": [
+                        "c62f7bfe-a349-4ccc-8326-0808c9282a28"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "mfa"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('97e4c3c2-a92a-4140-a995-9a434543c463')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "98f68301-6a44-4bf9-a67b-219e908fe4de",
+            "displayName": "TestNDAAuthcontext",
+            "createdDateTime": "2023-01-23T19:51:07.3114198Z",
+            "modifiedDateTime": "2023-01-23T20:27:22.3056044Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": [
+                        "c3"
+                    ]
+                },
+                "users": {
+                    "includeUsers": [
+                        "0d9090eb-094c-4769-9890-802977ecf652"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "excludeGuestsOrExternalUsers": null,
+                    "includeGuestsOrExternalUsers": {
+                        "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+                        "externalTenants": {
+                            "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+                            "membershipKind": "all"
+                        }
+                    }
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [
+                    "7616e160-251b-4c7a-a2de-4bcc2eda5c29"
+                ],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('98f68301-6a44-4bf9-a67b-219e908fe4de')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "a24591a1-b457-47ee-a578-3d2e349e5b88",
+            "displayName": "Workplace 1 - Allow compliant device rich apps",
+            "createdDateTime": "2021-03-12T22:53:27.8901751Z",
+            "modifiedDateTime": "2023-02-28T17:20:29.0533498Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "times": null,
+                "deviceStates": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [
+                        "d4ebce55-015a-49b5-a083-c84d1797ae8c",
+                        "9cdead84-a844-4324-93f2-b2e6bb768d07",
+                        "a4a365df-50f1-4397-bc59-1a1564b8bb9c",
+                        "a8d294b7-dee6-4134-a84f-efcc7e7e8932"
+                    ],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [
+                        "45493151-3540-4d48-b311-6b98ec68f9b4",
+                        "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                        "2300ccc8-2124-4937-84f0-3a63872af609",
+                        "3c052cc6-1a4a-4256-88a8-abb201afd6f1",
+                        "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                        "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                        "58941a10-492a-46c2-b6c3-b215e0306e31"
+                    ],
+                    "includeGroups": [
+                        "5e769024-0f21-4be0-af23-dd6045caa1c9"
+                    ],
+                    "excludeGroups": [
+                        "4db7708c-ae5e-470e-bdce-f1e410a21a6b",
+                        "f5ec4aaa-e33e-4562-bb83-6f014478cbab",
+                        "0c58eb53-bd5b-4cfa-b8ea-15f969fd911b"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [
+                        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                        "cf1c38e5-3621-4004-a7cb-879624dced7c",
+                        "9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f",
+                        "c430b396-e693-46cc-96f3-db01bf8bb62a",
+                        "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                        "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+                        "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+                        "e3973bdf-4987-49ae-837a-ba8e231c7286",
+                        "7495fdc4-34c4-4d15-a289-98788ce399fd",
+                        "aaf43236-0c0d-4d5f-883a-6955382ac081",
+                        "3edaf663-341e-4475-9f94-5c398ef6c070",
+                        "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+                        "158c047a-c907-4556-b7ef-446551a6b5f7",
+                        "7698a772-787b-4ac8-901f-60d6b08affd2",
+                        "17315797-102d-40b4-93e0-432062caca18",
+                        "e6d1a23a-da11-4be4-9570-befc86d067a7",
+                        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                        "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91",
+                        "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4",
+                        "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+                        "d29b2b05-8046-44ba-8758-1e26182fcf32",
+                        "9360feb5-f418-4baa-8175-e2a00bac4301",
+                        "8329153b-31d0-4727-b945-745eb3bc5f31",
+                        "44367163-eba1-44c3-98af-f5787879f96a",
+                        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+                        "6e591065-9bad-43ed-90f3-e9424366d2f0",
+                        "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+                        "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+                        "62e90394-69f5-4237-9190-012177145e10",
+                        "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+                        "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+                        "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+                        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+                        "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+                        "eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c",
+                        "31e939ad-9672-4796-9c2e-873181342d2d",
+                        "3a2c62db-5318-420d-8d74-23affee5d9d5",
+                        "74ef975b-6605-40af-a5d2-b9539d836353",
+                        "b5a8dcf3-09d5-43a9-a639-8e29ef291470",
+                        "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+                        "ac16e43d-7b2d-40e0-ac05-243ff356ab5b",
+                        "790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b",
+                        "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
+                        "2b745bdf-0803-4d80-aa65-822c4493daac",
+                        "966707d0-3269-4727-9be2-8c3a10f19b9d",
+                        "a9ea8996-122f-4c74-9520-8edcd192826c",
+                        "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+                        "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f",
+                        "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477",
+                        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+                        "e8611ab8-c189-46e8-94e1-60213ab1f814",
+                        "fe930be7-5e62-47db-91af-98c3a49a38b1",
+                        "75934031-6c7e-415a-99d7-48dbd49e875e",
+                        "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+                        "fcf91098-03e3-41a9-b5ba-6f0ec8188a12",
+                        "f70938a0-fc10-4177-9e90-2178f8765737",
+                        "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+                        "69091246-20e8-4a56-aa4d-066075b2a7a8",
+                        "75941009-915a-4869-abe7-691bff18279e",
+                        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+                        "f023fd81-a637-4b56-95fd-791ac0226033",
+                        "5d6b6bb7-de71-4623-b4af-96380a352509",
+                        "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+                        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                        "8835291a-918c-4fd7-a9ce-faa49f0cf7d9",
+                        "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+                        "4a5d8f65-41da-4de4-8968-e035b65339cf"
+                    ],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": {
+                        "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+                        "externalTenants": {
+                            "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+                            "membershipKind": "all"
+                        }
+                    }
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "all"
+                    ],
+                    "excludePlatforms": [
+                        "android",
+                        "iOS"
+                    ]
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                        "004414ec-46b0-4d81-9d45-4ffc0348bac7",
+                        "07f51a28-98e2-4c51-8970-1b916796cff0",
+                        "059262f8-b4d7-4d4e-b287-55496cba398f",
+                        "077e85d5-3add-4a5d-b833-d76aca0f32ea",
+                        "090778fc-fc66-46c6-a346-c0132b4af9e1",
+                        "08e11e19-8f83-481c-9d0f-dc43a47e6ffe",
+                        "04ce7112-5f14-4b06-9d4f-84b12bd4191a",
+                        "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                        "664e049c-ea80-4b31-af74-e75e2fc6721b",
+                        "0bc91f68-9884-4d1c-b3b9-0bb00a264e5b",
+                        "0ab3d6df-012a-4cf6-9072-6144005028da",
+                        "dcb11a9f-71f0-4ba8-a0b8-363bb2cf1c2c"
+                    ]
+                },
+                "devices": {
+                    "includeDeviceStates": [],
+                    "excludeDeviceStates": [],
+                    "includeDevices": [],
+                    "excludeDevices": [],
+                    "deviceFilter": {
+                        "mode": "exclude",
+                        "rule": "device.displayName -eq \"WD-TC-6HZ4RV2\""
+                    }
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "compliantDevice"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('a24591a1-b457-47ee-a578-3d2e349e5b88')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "a54f6228-5991-487e-83ce-b27200e462ab",
+            "displayName": "Admin 3 - Block medium or high sign-in risk",
+            "createdDateTime": "2021-04-07T08:20:23.824606Z",
+            "modifiedDateTime": "2022-06-20T19:55:19.5732094Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [
+                    "high",
+                    "medium"
+                ],
+                "clientAppTypes": [
+                    "browser",
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [
+                        "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                        "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                        "45493151-3540-4d48-b311-6b98ec68f9b4",
+                        "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                        "2300ccc8-2124-4937-84f0-3a63872af609"
+                    ],
+                    "includeGroups": [
+                        "efcbff71-7ea4-4134-9063-dad950548ef1"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [
+                        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                        "cf1c38e5-3621-4004-a7cb-879624dced7c",
+                        "9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f",
+                        "c430b396-e693-46cc-96f3-db01bf8bb62a",
+                        "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                        "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+                        "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+                        "e3973bdf-4987-49ae-837a-ba8e231c7286",
+                        "7495fdc4-34c4-4d15-a289-98788ce399fd",
+                        "aaf43236-0c0d-4d5f-883a-6955382ac081",
+                        "3edaf663-341e-4475-9f94-5c398ef6c070",
+                        "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+                        "158c047a-c907-4556-b7ef-446551a6b5f7",
+                        "7698a772-787b-4ac8-901f-60d6b08affd2",
+                        "17315797-102d-40b4-93e0-432062caca18",
+                        "e6d1a23a-da11-4be4-9570-befc86d067a7",
+                        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                        "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91",
+                        "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4",
+                        "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+                        "d29b2b05-8046-44ba-8758-1e26182fcf32",
+                        "9360feb5-f418-4baa-8175-e2a00bac4301",
+                        "8329153b-31d0-4727-b945-745eb3bc5f31",
+                        "44367163-eba1-44c3-98af-f5787879f96a",
+                        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+                        "6e591065-9bad-43ed-90f3-e9424366d2f0",
+                        "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+                        "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+                        "62e90394-69f5-4237-9190-012177145e10",
+                        "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+                        "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+                        "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+                        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+                        "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+                        "eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c",
+                        "31e939ad-9672-4796-9c2e-873181342d2d",
+                        "3a2c62db-5318-420d-8d74-23affee5d9d5",
+                        "74ef975b-6605-40af-a5d2-b9539d836353",
+                        "b5a8dcf3-09d5-43a9-a639-8e29ef291470",
+                        "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+                        "ac16e43d-7b2d-40e0-ac05-243ff356ab5b",
+                        "790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b",
+                        "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
+                        "2b745bdf-0803-4d80-aa65-822c4493daac",
+                        "966707d0-3269-4727-9be2-8c3a10f19b9d",
+                        "a9ea8996-122f-4c74-9520-8edcd192826c",
+                        "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+                        "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f",
+                        "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477",
+                        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+                        "e8611ab8-c189-46e8-94e1-60213ab1f814",
+                        "fe930be7-5e62-47db-91af-98c3a49a38b1",
+                        "75934031-6c7e-415a-99d7-48dbd49e875e",
+                        "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+                        "fcf91098-03e3-41a9-b5ba-6f0ec8188a12",
+                        "f70938a0-fc10-4177-9e90-2178f8765737",
+                        "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+                        "69091246-20e8-4a56-aa4d-066075b2a7a8",
+                        "75941009-915a-4869-abe7-691bff18279e",
+                        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+                        "f023fd81-a637-4b56-95fd-791ac0226033",
+                        "5d6b6bb7-de71-4623-b4af-96380a352509",
+                        "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+                        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                        "8835291a-918c-4fd7-a9ce-faa49f0cf7d9",
+                        "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+                        "4a5d8f65-41da-4de4-8968-e035b65339cf"
+                    ],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('a54f6228-5991-487e-83ce-b27200e462ab')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "a7ec1f97-0731-49eb-8b19-ea809ad9d13b",
+            "displayName": "User Risk 2 - Block Access",
+            "createdDateTime": "2021-05-15T17:46:56.9765201Z",
+            "modifiedDateTime": "2021-09-22T07:44:41.658148Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [
+                    "high"
+                ],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [
+                        "GuestsOrExternalUsers",
+                        "45493151-3540-4d48-b311-6b98ec68f9b4",
+                        "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                        "2300ccc8-2124-4937-84f0-3a63872af609",
+                        "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                        "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                        "bcbd220c-9cda-4371-8b21-59715a06de5c",
+                        "386c7341-e0a7-409d-8517-4a1760ebad0f"
+                    ],
+                    "includeGroups": [
+                        "32740b8e-b5cf-436e-894c-81e5018243bc"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('a7ec1f97-0731-49eb-8b19-ea809ad9d13b')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "b159f196-07c4-407c-8872-ee782e42d9db",
+            "displayName": "Workplace 2 - Allow non-compliant Browser to O365 with MFA and Session Controls",
+            "createdDateTime": "2021-03-13T07:31:48.8984024Z",
+            "modifiedDateTime": "2022-10-20T09:45:59.8550665Z",
+            "state": "enabled",
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "times": null,
+                "deviceStates": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "Office365",
+                        "9cdead84-a844-4324-93f2-b2e6bb768d07",
+                        "a4a365df-50f1-4397-bc59-1a1564b8bb9c"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [
+                        "GuestsOrExternalUsers",
+                        "45493151-3540-4d48-b311-6b98ec68f9b4",
+                        "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                        "2300ccc8-2124-4937-84f0-3a63872af609",
+                        "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                        "dafe857a-f92e-4763-a785-e01520c5f6e3"
+                    ],
+                    "includeGroups": [
+                        "5e769024-0f21-4be0-af23-dd6045caa1c9"
+                    ],
+                    "excludeGroups": [
+                        "4db7708c-ae5e-470e-bdce-f1e410a21a6b",
+                        "f5ec4aaa-e33e-4562-bb83-6f014478cbab",
+                        "0c58eb53-bd5b-4cfa-b8ea-15f969fd911b"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [
+                        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                        "cf1c38e5-3621-4004-a7cb-879624dced7c",
+                        "9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f",
+                        "c430b396-e693-46cc-96f3-db01bf8bb62a",
+                        "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                        "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+                        "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+                        "e3973bdf-4987-49ae-837a-ba8e231c7286",
+                        "7495fdc4-34c4-4d15-a289-98788ce399fd",
+                        "aaf43236-0c0d-4d5f-883a-6955382ac081",
+                        "3edaf663-341e-4475-9f94-5c398ef6c070",
+                        "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+                        "158c047a-c907-4556-b7ef-446551a6b5f7",
+                        "7698a772-787b-4ac8-901f-60d6b08affd2",
+                        "17315797-102d-40b4-93e0-432062caca18",
+                        "e6d1a23a-da11-4be4-9570-befc86d067a7",
+                        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                        "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91",
+                        "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4",
+                        "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+                        "d29b2b05-8046-44ba-8758-1e26182fcf32",
+                        "9360feb5-f418-4baa-8175-e2a00bac4301",
+                        "8329153b-31d0-4727-b945-745eb3bc5f31",
+                        "44367163-eba1-44c3-98af-f5787879f96a",
+                        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+                        "6e591065-9bad-43ed-90f3-e9424366d2f0",
+                        "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+                        "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+                        "62e90394-69f5-4237-9190-012177145e10",
+                        "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+                        "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+                        "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+                        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+                        "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+                        "eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c",
+                        "31e939ad-9672-4796-9c2e-873181342d2d",
+                        "3a2c62db-5318-420d-8d74-23affee5d9d5",
+                        "74ef975b-6605-40af-a5d2-b9539d836353",
+                        "b5a8dcf3-09d5-43a9-a639-8e29ef291470",
+                        "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+                        "ac16e43d-7b2d-40e0-ac05-243ff356ab5b",
+                        "790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b",
+                        "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
+                        "2b745bdf-0803-4d80-aa65-822c4493daac",
+                        "966707d0-3269-4727-9be2-8c3a10f19b9d",
+                        "a9ea8996-122f-4c74-9520-8edcd192826c",
+                        "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+                        "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f",
+                        "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477",
+                        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+                        "e8611ab8-c189-46e8-94e1-60213ab1f814",
+                        "fe930be7-5e62-47db-91af-98c3a49a38b1",
+                        "75934031-6c7e-415a-99d7-48dbd49e875e",
+                        "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+                        "fcf91098-03e3-41a9-b5ba-6f0ec8188a12",
+                        "f70938a0-fc10-4177-9e90-2178f8765737",
+                        "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+                        "69091246-20e8-4a56-aa4d-066075b2a7a8",
+                        "75941009-915a-4869-abe7-691bff18279e",
+                        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+                        "f023fd81-a637-4b56-95fd-791ac0226033",
+                        "5d6b6bb7-de71-4623-b4af-96380a352509",
+                        "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+                        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                        "8835291a-918c-4fd7-a9ce-faa49f0cf7d9",
+                        "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+                        "4a5d8f65-41da-4de4-8968-e035b65339cf"
+                    ],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "all"
+                    ],
+                    "excludePlatforms": [
+                        "iOS",
+                        "android"
+                    ]
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                        "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                        "004414ec-46b0-4d81-9d45-4ffc0348bac7",
+                        "07f51a28-98e2-4c51-8970-1b916796cff0",
+                        "059262f8-b4d7-4d4e-b287-55496cba398f",
+                        "077e85d5-3add-4a5d-b833-d76aca0f32ea",
+                        "090778fc-fc66-46c6-a346-c0132b4af9e1",
+                        "08e11e19-8f83-481c-9d0f-dc43a47e6ffe",
+                        "04ce7112-5f14-4b06-9d4f-84b12bd4191a",
+                        "664e049c-ea80-4b31-af74-e75e2fc6721b",
+                        "0bc91f68-9884-4d1c-b3b9-0bb00a264e5b",
+                        "0ab3d6df-012a-4cf6-9072-6144005028da",
+                        "dcb11a9f-71f0-4ba8-a0b8-363bb2cf1c2c"
+                    ]
+                },
+                "devices": {
+                    "includeDeviceStates": [],
+                    "excludeDeviceStates": [],
+                    "includeDevices": [],
+                    "excludeDevices": [],
+                    "deviceFilter": {
+                        "mode": "exclude",
+                        "rule": "device.isCompliant -eq True"
+                    }
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "mfa"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('b159f196-07c4-407c-8872-ee782e42d9db')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            },
+            "sessionControls": {
+                "disableResilienceDefaults": false,
+                "applicationEnforcedRestrictions": null,
+                "persistentBrowser": null,
+                "continuousAccessEvaluation": null,
+                "secureSignInSession": null,
+                "cloudAppSecurity": {
+                    "cloudAppSecurityType": "mcasConfigured",
+                    "isEnabled": true
+                },
+                "signInFrequency": {
+                    "value": 8,
+                    "type": "hours",
+                    "authenticationType": "primaryAndSecondaryAuthentication",
+                    "frequencyInterval": "timeBased",
+                    "isEnabled": true
+                }
+            }
+        },
+        {
+            "id": "b71ebac9-4869-40c2-9ef9-2eed93414ec3",
+            "displayName": "Workplace 4 - Require MFA",
+            "createdDateTime": "2021-04-06T14:40:59.1138901Z",
+            "modifiedDateTime": "2023-04-03T17:31:55.7257658Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser",
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "times": null,
+                "deviceStates": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [
+                        "372140e0-b3b7-4226-8ef9-d57986796201",
+                        "9cdead84-a844-4324-93f2-b2e6bb768d07",
+                        "508ad772-8b4f-4396-a9b5-f89bdfcf9402",
+                        "fa4345a4-a730-4230-84a8-7d9651b86739",
+                        "1697d0cd-1d83-4d0b-9b5d-b8f49fb4ddac",
+                        "7e7fcaed-8aaa-4e00-ad22-54b33f21f5ef",
+                        "3986ae4a-985e-44c8-957a-9e779ee2f833",
+                        "a8d294b7-dee6-4134-a84f-efcc7e7e8932",
+                        "9d6e8ad9-05a5-47d7-b0ee-73dc3e3e1013"
+                    ],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [
+                        "GuestsOrExternalUsers",
+                        "45493151-3540-4d48-b311-6b98ec68f9b4",
+                        "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                        "2300ccc8-2124-4937-84f0-3a63872af609",
+                        "b3b49fac-e3e9-4dc2-9df3-1638f2d68017",
+                        "2f2d1995-6b41-4dc1-997e-4641d4a4e99c",
+                        "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                        "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                        "58941a10-492a-46c2-b6c3-b215e0306e31"
+                    ],
+                    "includeGroups": [
+                        "5e769024-0f21-4be0-af23-dd6045caa1c9",
+                        "68e73c25-3636-48fa-9d62-01e4c959441b"
+                    ],
+                    "excludeGroups": [
+                        "4db7708c-ae5e-470e-bdce-f1e410a21a6b",
+                        "f5ec4aaa-e33e-4562-bb83-6f014478cbab",
+                        "0c58eb53-bd5b-4cfa-b8ea-15f969fd911b",
+                        "4a037dbc-3108-412c-82e2-e51296c0ea08"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [
+                        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                        "cf1c38e5-3621-4004-a7cb-879624dced7c",
+                        "9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f",
+                        "c430b396-e693-46cc-96f3-db01bf8bb62a",
+                        "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                        "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+                        "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+                        "e3973bdf-4987-49ae-837a-ba8e231c7286",
+                        "7495fdc4-34c4-4d15-a289-98788ce399fd",
+                        "aaf43236-0c0d-4d5f-883a-6955382ac081",
+                        "3edaf663-341e-4475-9f94-5c398ef6c070",
+                        "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+                        "158c047a-c907-4556-b7ef-446551a6b5f7",
+                        "7698a772-787b-4ac8-901f-60d6b08affd2",
+                        "17315797-102d-40b4-93e0-432062caca18",
+                        "e6d1a23a-da11-4be4-9570-befc86d067a7",
+                        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                        "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91",
+                        "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4",
+                        "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+                        "d29b2b05-8046-44ba-8758-1e26182fcf32",
+                        "9360feb5-f418-4baa-8175-e2a00bac4301",
+                        "8329153b-31d0-4727-b945-745eb3bc5f31",
+                        "44367163-eba1-44c3-98af-f5787879f96a",
+                        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+                        "6e591065-9bad-43ed-90f3-e9424366d2f0",
+                        "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+                        "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+                        "62e90394-69f5-4237-9190-012177145e10",
+                        "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+                        "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+                        "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+                        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+                        "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+                        "eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c",
+                        "31e939ad-9672-4796-9c2e-873181342d2d",
+                        "3a2c62db-5318-420d-8d74-23affee5d9d5",
+                        "74ef975b-6605-40af-a5d2-b9539d836353",
+                        "b5a8dcf3-09d5-43a9-a639-8e29ef291470",
+                        "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+                        "ac16e43d-7b2d-40e0-ac05-243ff356ab5b",
+                        "790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b",
+                        "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
+                        "2b745bdf-0803-4d80-aa65-822c4493daac",
+                        "966707d0-3269-4727-9be2-8c3a10f19b9d",
+                        "a9ea8996-122f-4c74-9520-8edcd192826c",
+                        "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+                        "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f",
+                        "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477",
+                        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+                        "e8611ab8-c189-46e8-94e1-60213ab1f814",
+                        "fe930be7-5e62-47db-91af-98c3a49a38b1",
+                        "75934031-6c7e-415a-99d7-48dbd49e875e",
+                        "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+                        "fcf91098-03e3-41a9-b5ba-6f0ec8188a12",
+                        "f70938a0-fc10-4177-9e90-2178f8765737",
+                        "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+                        "69091246-20e8-4a56-aa4d-066075b2a7a8",
+                        "75941009-915a-4869-abe7-691bff18279e",
+                        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+                        "f023fd81-a637-4b56-95fd-791ac0226033",
+                        "5d6b6bb7-de71-4623-b4af-96380a352509",
+                        "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+                        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+                        "8835291a-918c-4fd7-a9ce-faa49f0cf7d9",
+                        "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+                        "4a5d8f65-41da-4de4-8968-e035b65339cf"
+                    ],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": {
+                        "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+                        "externalTenants": {
+                            "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+                            "membershipKind": "all"
+                        }
+                    }
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "all"
+                    ],
+                    "excludePlatforms": [
+                        "iOS",
+                        "android"
+                    ]
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                        "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                        "004414ec-46b0-4d81-9d45-4ffc0348bac7",
+                        "07f51a28-98e2-4c51-8970-1b916796cff0",
+                        "059262f8-b4d7-4d4e-b287-55496cba398f",
+                        "077e85d5-3add-4a5d-b833-d76aca0f32ea",
+                        "090778fc-fc66-46c6-a346-c0132b4af9e1",
+                        "08e11e19-8f83-481c-9d0f-dc43a47e6ffe",
+                        "04ce7112-5f14-4b06-9d4f-84b12bd4191a",
+                        "664e049c-ea80-4b31-af74-e75e2fc6721b",
+                        "0bc91f68-9884-4d1c-b3b9-0bb00a264e5b",
+                        "0ab3d6df-012a-4cf6-9072-6144005028da",
+                        "dcb11a9f-71f0-4ba8-a0b8-363bb2cf1c2c"
+                    ]
+                },
+                "devices": {
+                    "includeDeviceStates": [],
+                    "excludeDeviceStates": [],
+                    "includeDevices": [],
+                    "excludeDevices": [],
+                    "deviceFilter": {
+                        "mode": "exclude",
+                        "rule": "device.enrollmentProfileName -eq \"Shared Device Profile\" -or device.enrollmentProfileName -eq \"Shared\""
+                    }
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "mfa"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('b71ebac9-4869-40c2-9ef9-2eed93414ec3')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "bc7dd38d-eef4-4f7a-b2d2-177ff8ca4888",
+            "displayName": "Legacy 1 - Block legacy auth",
+            "createdDateTime": "2021-03-13T18:26:09.8298118Z",
+            "modifiedDateTime": "2021-05-26T10:48:13.4145657Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "exchangeActiveSync",
+                    "other"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "All"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [
+                        "6424e446-c617-4f23-89f5-ec2d7fe08922"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('bc7dd38d-eef4-4f7a-b2d2-177ff8ca4888')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "c049e8a1-5bc7-42a8-98d2-0b6545ecc216",
+            "displayName": "Admin 4 - Trusted Admin locations",
+            "createdDateTime": "2021-04-07T08:23:17.0480493Z",
+            "modifiedDateTime": "2023-03-30T05:41:46.4334325Z",
+            "state": "enabledForReportingButNotEnforced",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser",
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [
+                        "efcbff71-7ea4-4134-9063-dad950548ef1",
+                        "a0553820-cc4a-4256-9992-42a153ca4413",
+                        "a216d6c7-af11-4b01-8dab-63869ade1577",
+                        "db593d80-4fe7-4212-801b-809f983405ef",
+                        "239832f9-e6c2-492b-8427-bbec0286b48c",
+                        "af449d02-6747-4c0e-9885-69a37c8c5c20"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "all"
+                    ],
+                    "excludePlatforms": []
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "01f87633-7474-41d5-9e7c-b5b09d70a6e0",
+                        "01610050-e115-49a5-8690-85b4ff602cb4",
+                        "ec9796dc-57e5-4cb5-9de7-0dfa94e139be",
+                        "7a336803-67af-4915-bf19-5769249c4a5d",
+                        "09a3531c-5102-4778-ad19-1aceb65b1886",
+                        "0688f909-d87a-4dd7-ae1f-992242783397",
+                        "03af3760-2505-4b71-adfb-18f895b28446",
+                        "0f9ef712-0d59-4b4a-89e6-71754f71abc7",
+                        "0f530bb3-61e6-4798-a54b-2d2c87a6de96",
+                        "06f81030-21d4-4dec-9038-bdf5af107d9d",
+                        "0927acba-68fc-4346-b4bb-32110fe21c6b",
+                        "db379825-3f2e-4bb4-bb77-b3326343790c",
+                        "0839388a-72f5-4c9f-95a2-92e83537a813",
+                        "05d425f2-e712-4055-8129-e8fd5c08651f",
+                        "0fc092e7-9db8-4408-a87a-df955384bd04",
+                        "04333b93-40f0-41dc-a02f-674f397b4301",
+                        "0bfda018-6899-44bd-af62-cb316233660b",
+                        "052159e0-616d-43c7-a841-1a708fe9a753",
+                        "72f7432d-571f-461d-a14a-5ab878901699",
+                        "e485b90e-de3d-4627-a2ce-ad7975210142",
+                        "06ba0807-c795-4383-903b-55bb91ea49eb",
+                        "0b69178a-24c9-4c02-8b5e-2d001fdc467b",
+                        "f065f14e-4397-427b-8cd4-eeeb4e7f3104",
+                        "0b3def5a-1f04-471d-8bf3-c120076c2d12",
+                        "0929aa8d-4321-4e2b-a1b1-6d089191cb99",
+                        "036ca995-30f5-44d5-ada7-e766b4312278",
+                        "8603c1fe-ac1c-4553-a09d-6a2389466fe7",
+                        "0e5a8db4-9603-4b8d-bbf5-9e74d7fd623a",
+                        "0bcd77de-e0c0-4472-81d5-32715649f792",
+                        "05b7c805-7b06-4f41-b0bf-792c44397940",
+                        "06b3faae-466e-48b2-aea7-fff9e1bf9d20",
+                        "0fcd25a8-8f1c-4152-b973-f9f00444946b",
+                        "0671a93e-4b6d-4a24-aeac-67a7de7b5891",
+                        "09d03ff7-8b0c-428f-9e4b-ab3ec82cfb22",
+                        "11b57b4b-f815-4c91-8a70-e0ca96ad71a0",
+                        "07231f2d-28c5-451c-91b2-7f96f8a00da2",
+                        "075a5479-3c49-4279-baf3-19b48ad9328b",
+                        "d3d88004-d3a2-40eb-b521-bd7e965fb99e",
+                        "94e81408-26cd-42ca-adc4-cd426012d936",
+                        "0e9e4b05-163a-4369-8898-f98a7c317550",
+                        "0ee07160-b46b-4ac4-848d-cb5ac64e2687",
+                        "40fc9098-d4fa-4ae6-9fa5-c0e688c84e9e",
+                        "d2807515-a7e7-4f80-90f7-c1ebcd765465",
+                        "037719b9-0729-4582-98a7-16385eceec06",
+                        "0e9f53d8-d0fd-4c38-aef1-a70b0aa222d8",
+                        "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                        "0853ba1d-c8bf-419f-8e2c-ca64a553f461",
+                        "0ec7e7cd-95b3-4dc1-ac97-9ea1dccb342a",
+                        "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                        "03b5ffec-1605-44b3-914b-9944c8a81b1d",
+                        "0ed37a4c-cedf-4fdb-82a7-46fe84774bad",
+                        "0b45e60e-1557-4e9f-8a26-cbf9ddd1678e"
+                    ]
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('c049e8a1-5bc7-42a8-98d2-0b6545ecc216')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "d02b6115-8d68-4d62-bb81-3d35aa65e5ca",
+            "displayName": "Admin X - Tier1 - Block non-PAW devices",
+            "createdDateTime": "2023-01-05T10:44:42.1651396Z",
+            "modifiedDateTime": null,
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [
+                        "1d336d2c-4ae8-42ef-9711-b3604ce3fc2c"
+                    ],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "devices": {
+                    "includeDeviceStates": [],
+                    "excludeDeviceStates": [],
+                    "includeDevices": [],
+                    "excludeDevices": [],
+                    "deviceFilter": {
+                        "mode": "exclude",
+                        "rule": "device.displayName -startsWith \"CPAWT1\" -or device.displayName -startsWith \"VPAW001\""
+                    }
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('d02b6115-8d68-4d62-bb81-3d35aa65e5ca')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "d54dd85a-6529-4418-a048-c3a454df8ab1",
+            "displayName": "CA_SharepointMigration_WINZ",
+            "createdDateTime": "2021-05-26T08:10:20.301502Z",
+            "modifiedDateTime": "2021-05-26T11:40:17.5854342Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "exchangeActiveSync",
+                    "browser",
+                    "mobileAppsAndDesktopClients",
+                    "other"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "a2519402-3ccc-4b97-8522-0b89445cf80a"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "079f3982-0696-4f0b-b1e8-6258260bbb50"
+                    ]
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('d54dd85a-6529-4418-a048-c3a454df8ab1')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "e23df2ae-5744-442b-96c9-d2ae101cb811",
+            "displayName": "CloudPAW.CA.RequireCompliantDevice",
+            "createdDateTime": null,
+            "modifiedDateTime": "2022-06-20T19:43:07.2389865Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser",
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [
+                        "260b2a9d-50c2-41f7-a71f-b447a06c9314"
+                    ],
+                    "excludeGroups": [
+                        "0216fb01-188f-4676-8079-af5ac19418af",
+                        "6f53f0e7-ca6b-4bd5-9da7-d559215cd1fe",
+                        "efcbff71-7ea4-4134-9063-dad950548ef1"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "windows"
+                    ],
+                    "excludePlatforms": []
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "01f87633-7474-41d5-9e7c-b5b09d70a6e0"
+                    ]
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "compliantDevice"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('e23df2ae-5744-442b-96c9-d2ae101cb811')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "e60aea43-4668-4942-a92e-a747b82a0a56",
+            "displayName": "Mobile 3 - Require compliant device for sensitive apps",
+            "createdDateTime": "2021-03-21T18:49:23.2911401Z",
+            "modifiedDateTime": "2022-10-04T14:57:52.9319494Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser",
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "8cd924bb-28f9-46b5-b0e1-52ea5e74e501",
+                        "cb631f06-ab10-4c93-8478-c81a7674cd1a"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "All"
+                    ],
+                    "excludeUsers": [
+                        "GuestsOrExternalUsers"
+                    ],
+                    "includeGroups": [],
+                    "excludeGroups": [
+                        "307c4c83-25ac-4bd6-8552-a07d1a6d6e9d"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "android",
+                        "iOS"
+                    ],
+                    "excludePlatforms": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "compliantDevice"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('e60aea43-4668-4942-a92e-a747b82a0a56')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "e6e27651-e03e-4179-b394-735335d9ca81",
+            "displayName": "CloudPAW.CA.Block.Unsupported_OS",
+            "createdDateTime": null,
+            "modifiedDateTime": "2021-05-18T15:47:17.4837731Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "browser",
+                    "mobileAppsAndDesktopClients"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [
+                        "19dcf438-0d7e-40d3-b9ef-f34c0ff086c2"
+                    ],
+                    "includeGroups": [
+                        "f5ec4aaa-e33e-4562-bb83-6f014478cbab",
+                        "4db7708c-ae5e-470e-bdce-f1e410a21a6b"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "all"
+                    ],
+                    "excludePlatforms": [
+                        "windows"
+                    ]
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('e6e27651-e03e-4179-b394-735335d9ca81')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "ea59695a-2235-437d-855f-d1692a00d23b",
+            "displayName": "VPN 1 - Block Pulse Secure Connect for BU RU",
+            "createdDateTime": "2022-03-03T12:17:34.7883694Z",
+            "modifiedDateTime": "2022-03-04T15:51:32.4188714Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "03318c91-f2d1-4179-a703-2338e0fe3de3",
+                        "f167ba52-4003-44a7-99d2-c7272931e2ec",
+                        "04e9629b-97e9-4929-a2fc-436cef10eb2b",
+                        "2a55d553-356b-49f1-80de-093843fa8a0e",
+                        "484be971-d060-48da-b193-c8b5b0474ba5"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [
+                        "8aced846-845b-4c0f-a170-717db02ebb3e"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "all"
+                    ],
+                    "excludePlatforms": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('ea59695a-2235-437d-855f-d1692a00d23b')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "eb03d26f-8b4e-4363-8343-7da86022b0a5",
+            "displayName": "Admin X - Tier2 - Block non-PAW devices",
+            "createdDateTime": "2023-01-05T10:47:07.6162573Z",
+            "modifiedDateTime": null,
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "None"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [
+                        "3f1acade-1e04-4fbc-9b69-f0302cd84aef"
+                    ],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "devices": {
+                    "includeDeviceStates": [],
+                    "excludeDeviceStates": [],
+                    "includeDevices": [],
+                    "excludeDevices": [],
+                    "deviceFilter": {
+                        "mode": "exclude",
+                        "rule": "device.displayName -startsWith \"CPAWT2\" -or device.displayName -startsWith \"VPAW002\""
+                    }
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('eb03d26f-8b4e-4363-8343-7da86022b0a5')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "faf878c9-25a6-4892-9297-95f7ca80944b",
+            "displayName": "CA_FunctionalAccounts.AllowedIPranges",
+            "createdDateTime": null,
+            "modifiedDateTime": "2021-12-02T10:56:11.2019638Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "exchangeActiveSync",
+                    "browser",
+                    "mobileAppsAndDesktopClients",
+                    "other"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [
+                        "1ea119cd-9bef-4c18-ae3e-0c7c113607e7"
+                    ],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "all"
+                    ],
+                    "excludePlatforms": []
+                },
+                "locations": {
+                    "includeLocations": [
+                        "All"
+                    ],
+                    "excludeLocations": [
+                        "664e049c-ea80-4b31-af74-e75e2fc6721b",
+                        "dcb11a9f-71f0-4ba8-a0b8-363bb2cf1c2c",
+                        "ec9796dc-57e5-4cb5-9de7-0dfa94e139be",
+                        "9e31d071-2bbf-4925-bab3-39ca3b048bdb",
+                        "027cb158-e15d-47b8-9f93-fd008a051c65"
+                    ]
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('faf878c9-25a6-4892-9297-95f7ca80944b')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "fc8b305c-937e-4049-98a0-d623af98b100",
+            "displayName": "Mobile 5 - Require compliant device for Office 365 on MDM devices",
+            "createdDateTime": "2021-03-22T13:47:04.7689253Z",
+            "modifiedDateTime": "2022-09-05T08:32:50.0804982Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "mobileAppsAndDesktopClients",
+                    "browser"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "Office365"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "All"
+                    ],
+                    "excludeUsers": [
+                        "GuestsOrExternalUsers"
+                    ],
+                    "includeGroups": [],
+                    "excludeGroups": [
+                        "307c4c83-25ac-4bd6-8552-a07d1a6d6e9d"
+                    ],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "platforms": {
+                    "includePlatforms": [
+                        "iOS",
+                        "android"
+                    ],
+                    "excludePlatforms": []
+                },
+                "devices": {
+                    "includeDeviceStates": [],
+                    "excludeDeviceStates": [],
+                    "includeDevices": [],
+                    "excludeDevices": [],
+                    "deviceFilter": {
+                        "mode": "include",
+                        "rule": "device.deviceOwnership -eq \"Personal\" -or device.deviceOwnership -eq \"Company\""
+                    }
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "compliantDevice"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('fc8b305c-937e-4049-98a0-d623af98b100')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        },
+        {
+            "id": "fef30783-f76a-418d-8207-a49dd7d35757",
+            "displayName": "Sign-in Risk 1 - Require MFA",
+            "createdDateTime": "2021-05-15T17:53:18.0622239Z",
+            "modifiedDateTime": "2023-01-26T12:09:35.7472178Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [
+                    "high",
+                    "medium"
+                ],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "All"
+                    ],
+                    "excludeUsers": [
+                        "45493151-3540-4d48-b311-6b98ec68f9b4",
+                        "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                        "2300ccc8-2124-4937-84f0-3a63872af609",
+                        "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                        "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                        "bcbd220c-9cda-4371-8b21-59715a06de5c",
+                        "386c7341-e0a7-409d-8517-4a1760ebad0f",
+                        "b3b49fac-e3e9-4dc2-9df3-1638f2d68017",
+                        "647bea09-b115-4dd6-a5b1-739493bf352c"
+                    ],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": {
+                        "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+                        "externalTenants": {
+                            "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+                            "membershipKind": "all"
+                        }
+                    }
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "mfa"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('fef30783-f76a-418d-8207-a49dd7d35757')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "displayName": "CA_T2Ext_AllowedIPRanges",
+    "state": "enabled",
+    "sessionControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "browser",
+            "mobileAppsAndDesktopClients"
+        ],
+        "platforms": null,
+        "deviceStates": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": []
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [],
+            "includeGroups": [
+                "db593d80-4fe7-4212-801b-809f983405ef"
+            ],
+            "excludeGroups": [],
+            "includeRoles": [],
+            "excludeRoles": []
+        },
+        "locations": {
+            "includeLocations": [
+                "All"
+            ],
+            "excludeLocations": [
+                "01f87633-7474-41d5-9e7c-b5b09d70a6e0",
+                "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                "0853ba1d-c8bf-419f-8e2c-ca64a553f461",
+                "0ec7e7cd-95b3-4dc1-ac97-9ea1dccb342a",
+                "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                "03b5ffec-1605-44b3-914b-9944c8a81b1d",
+                "0ed37a4c-cedf-4fdb-82a7-46fe84774bad",
+                "0b45e60e-1557-4e9f-8a26-cbf9ddd1678e",
+                "03af3760-2505-4b71-adfb-18f895b28446"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "block"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+    }
+}

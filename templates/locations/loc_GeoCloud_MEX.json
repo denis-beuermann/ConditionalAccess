@@ -1,0 +1,15 @@
+{
+    "ipRanges":  [
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "201.174.146.208/28"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.iPv4CidrRange",
+                         "cidrAddress":  "201.174.146.192/28"
+                     }
+                 ],
+    "displayname":  "loc_GeoCloud_MEX",
+    "isTrusted":  true,
+    "@odata.type":  "#microsoft.graph.ipNamedLocation"
+}

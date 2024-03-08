@@ -1,0 +1,127 @@
+{
+    "displayName": "Admin 4 - Trusted Admin locations",
+    "state": "enabledForReportingButNotEnforced",
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "browser",
+            "mobileAppsAndDesktopClients"
+        ],
+        "servicePrincipalRiskLevels": [],
+        "signInRiskDetections": null,
+        "times": null,
+        "deviceStates": null,
+        "devices": {
+            "includeDeviceStates": [],
+            "excludeDeviceStates": [],
+            "includeDevices": [],
+            "excludeDevices": [],
+            "deviceFilter": {
+                "mode": "exclude",
+                "rule": "device.displayName -startsWith \"CPAWT\" -or device.displayName -startsWith \"SAZ0003\" -or device.displayName -startsWith \"SAZ0004\" -or device.displayName -startsWith \"SAZ0012\" -or device.displayName -startsWith \"SAZ0011\" -or device.displayName -startsWith \"VPAW00\" -or device.displayName -startsWith \"SAZ0071\""
+            }
+        },
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": [],
+            "applicationFilter": null,
+            "networkAccess": null
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [],
+            "includeGroups": [
+                "efcbff71-7ea4-4134-9063-dad950548ef1",
+                "a0553820-cc4a-4256-9992-42a153ca4413",
+                "a216d6c7-af11-4b01-8dab-63869ade1577",
+                "db593d80-4fe7-4212-801b-809f983405ef",
+                "239832f9-e6c2-492b-8427-bbec0286b48c",
+                "af449d02-6747-4c0e-9885-69a37c8c5c20"
+            ],
+            "excludeGroups": [],
+            "includeRoles": [],
+            "excludeRoles": [],
+            "includeGuestsOrExternalUsers": null,
+            "excludeGuestsOrExternalUsers": null
+        },
+        "platforms": {
+            "includePlatforms": [
+                "all"
+            ],
+            "excludePlatforms": []
+        },
+        "locations": {
+            "includeLocations": [
+                "All"
+            ],
+            "excludeLocations": [
+                "01f87633-7474-41d5-9e7c-b5b09d70a6e0",
+                "01610050-e115-49a5-8690-85b4ff602cb4",
+                "7a336803-67af-4915-bf19-5769249c4a5d",
+                "0cb964c6-c063-41f1-abb4-99d7e1cc282b",
+                "0a3d23b5-69a1-4ab8-b7d6-c5d48f76db2e",
+                "06f81030-21d4-4dec-9038-bdf5af107d9d",
+                "0927acba-68fc-4346-b4bb-32110fe21c6b",
+                "db379825-3f2e-4bb4-bb77-b3326343790c",
+                "0fc092e7-9db8-4408-a87a-df955384bd04",
+                "e485b90e-de3d-4627-a2ce-ad7975210142",
+                "06ba0807-c795-4383-903b-55bb91ea49eb",
+                "0b69178a-24c9-4c02-8b5e-2d001fdc467b",
+                "f065f14e-4397-427b-8cd4-eeeb4e7f3104",
+                "0b3def5a-1f04-471d-8bf3-c120076c2d12",
+                "036ca995-30f5-44d5-ada7-e766b4312278",
+                "8603c1fe-ac1c-4553-a09d-6a2389466fe7",
+                "0e5a8db4-9603-4b8d-bbf5-9e74d7fd623a",
+                "0bcd77de-e0c0-4472-81d5-32715649f792",
+                "11b57b4b-f815-4c91-8a70-e0ca96ad71a0",
+                "075a5479-3c49-4279-baf3-19b48ad9328b",
+                "94e81408-26cd-42ca-adc4-cd426012d936",
+                "0e9e4b05-163a-4369-8898-f98a7c317550",
+                "0ee07160-b46b-4ac4-848d-cb5ac64e2687",
+                "0827103e-0122-4a23-9fc2-ae3f92cdd8f7",
+                "d2807515-a7e7-4f80-90f7-c1ebcd765465",
+                "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                "0853ba1d-c8bf-419f-8e2c-ca64a553f461",
+                "0ec7e7cd-95b3-4dc1-ac97-9ea1dccb342a",
+                "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                "03b5ffec-1605-44b3-914b-9944c8a81b1d",
+                "0ed37a4c-cedf-4fdb-82a7-46fe84774bad",
+                "0839388a-72f5-4c9f-95a2-92e83537a813",
+                "037719b9-0729-4582-98a7-16385eceec06",
+                "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                "0853ba1d-c8bf-419f-8e2c-ca64a553f461",
+                "0ec7e7cd-95b3-4dc1-ac97-9ea1dccb342a",
+                "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                "03b5ffec-1605-44b3-914b-9944c8a81b1d",
+                "0ed37a4c-cedf-4fdb-82a7-46fe84774bad",
+                "03af3760-2505-4b71-adfb-18f895b28446",
+                "6c3d1e56-93a7-42e7-b529-bfab6cd04a5d",
+                "0853ba1d-c8bf-419f-8e2c-ca64a553f461",
+                "0ec7e7cd-95b3-4dc1-ac97-9ea1dccb342a",
+                "03b5ffec-1605-44b3-914b-9944c8a81b1d",
+                "002387a0-e17f-4b6c-9122-f163b5e70eb5",
+                "0ed37a4c-cedf-4fdb-82a7-46fe84774bad",
+                "11b57b4b-f815-4c91-8a70-e0ca96ad71a0",
+                "d2807515-a7e7-4f80-90f7-c1ebcd765465",
+                "01610050-e115-49a5-8690-85b4ff602cb4",
+                "d3d88004-d3a2-40eb-b521-bd7e965fb99e"
+            ]
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "block"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": [],
+        "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('c049e8a1-5bc7-42a8-98d2-0b6545ecc216')/grantControls/authenticationStrength/$entity",
+        "authenticationStrength": null
+    }
+}

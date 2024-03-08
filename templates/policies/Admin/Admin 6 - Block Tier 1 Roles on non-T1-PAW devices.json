@@ -1,0 +1,65 @@
+{
+    "displayName": "Admin 6 - Block Tier 1 Roles on non-T1-PAW devices",
+    "state": "enabled",
+    "sessionControls": null,
+    "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+            "all"
+        ],
+        "platforms": null,
+        "locations": null,
+        "times": null,
+        "deviceStates": null,
+        "clientApplications": null,
+        "applications": {
+            "includeApplications": [
+                "All"
+            ],
+            "excludeApplications": [
+                "9cdead84-a844-4324-93f2-b2e6bb768d07"
+            ],
+            "includeUserActions": [],
+            "includeAuthenticationContextClassReferences": [],
+            "applicationFilter": null
+        },
+        "users": {
+            "includeUsers": [],
+            "excludeUsers": [
+                "45493151-3540-4d48-b311-6b98ec68f9b4",
+                "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                "dafe857a-f92e-4763-a785-e01520c5f6e3"
+            ],
+            "includeGroups": [],
+            "excludeGroups": [],
+            "includeRoles": [
+                "ffd52fa5-98dc-465c-991d-fc073eb59f8f"
+            ],
+            "excludeRoles": [],
+            "includeGuestsOrExternalUsers": null,
+            "excludeGuestsOrExternalUsers": null
+        },
+        "devices": {
+            "includeDeviceStates": [],
+            "excludeDeviceStates": [],
+            "includeDevices": [],
+            "excludeDevices": [],
+            "deviceFilter": {
+                "mode": "exclude",
+                "rule": "device.displayName -startsWith \"CPAWT1\" -or device.displayName -startsWith \"VPAW001\""
+            }
+        }
+    },
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "block"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": [],
+        "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('d02b6115-8d68-4d62-bb81-3d35aa65e5ca')/grantControls/authenticationStrength/$entity",
+        "authenticationStrength": null
+    }
+}

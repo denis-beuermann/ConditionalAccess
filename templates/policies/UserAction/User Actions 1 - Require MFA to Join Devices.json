@@ -1,0 +1,56 @@
+{ 
+    "displayName": "User Actions 1 - Require MFA to Join Devices", 
+    "state": "enabled", 
+    "conditions": { 
+        "signInRiskLevels": [],
+        "userRiskLevels": [],
+        "clientAppTypes": [
+            "all"
+        ],
+        "platforms": [],
+        "applications": {
+            "includeApplications": [],
+            "excludeApplications": [],
+            "includeUserActions": [
+                "urn:user:registerdevice"
+            ],
+            "includeAuthenticationContextClassReferences": []
+        },
+        "users": { 
+            "includeUsers": [
+                "All"
+            ],
+            "excludeUsers": [
+                "f974c6fd-78b5-462f-8c22-20088cf70dec",
+                "dafe857a-f92e-4763-a785-e01520c5f6e3",
+                "45493151-3540-4d48-b311-6b98ec68f9b4",
+                "8145ad6d-5372-4626-ad12-186b9ce0a163",
+                "2300ccc8-2124-4937-84f0-3a63872af609",
+            ],
+            "includeGroups": [
+
+            ], 
+            "excludeGroups": [
+                "307c4c83-25ac-4bd6-8552-a07d1a6d6e9d",
+                "0c58eb53-bd5b-4cfa-b8ea-15f969fd911b",
+                "4a037dbc-3108-412c-82e2-e51296c0ea08",
+                "8d9b0486-70d1-4e10-8692-1002c6854423",
+                "2977eef8-8838-4b9b-b556-6cbe56b30342"
+            ],
+            "includeRoles": [
+
+            ],
+            "excludeRoles": [
+
+            ]
+        }
+    }, 
+    "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+            "mfa"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+    }
+}
