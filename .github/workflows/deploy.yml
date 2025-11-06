@@ -38,7 +38,7 @@ jobs:
       - name: Authenticate to Microsoft Graph
         shell: pwsh
         run: |
-          Connect-MgGraph -ClientId ${{ secrets.AZURE_CLIENT_ID }} -TenantId ${{ secrets.AZURE_TENANT_ID }}
+          Connect-MgGraph -ClientId ${{ secrets.AZURE_CLIENT_ID }} -TenantId ${{ secrets.AZURE_TENANT_ID }} -scope "Directory.Read.All"
           Get-MgServicePrincipal -Filter "appId eq '${{ secrets.AZURE_CLIENT_ID }}'"
       
       #- name: Azure CLI Login
