@@ -35,15 +35,28 @@ jobs:
           Set-PSRepository PSGallery -InstallationPolicy Trusted
           Install-Module Microsoft.Graph.Authentication,Microsoft.Graph.Applications
 
-      - name: Authenticate to Microsoft Graph
-        shell: pwsh
+      #- name: Authenticate to Microsoft Graph
+      #  shell: pwsh
+      #  run: |
+      #    Connect-MgGraph -ClientId ${{ secrets.AZURE_CLIENT_ID }} -TenantId ${{ secrets.AZURE_TENANT_ID }} -scope "Directory.Read.All"
+          
+
+      - name: Azure CLI Login
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          allow-no-subscriptions: true
+
+      - name: Assign Costcenters
         run: |
-          Connect-MgGraph -ClientId ${{ secrets.AZURE_CLIENT_ID }} -TenantId ${{ secrets.AZURE_TENANT_ID }} -scope "Directory.Read.All"
-          Get-MgServicePrincipal -Filter "appId eq '${{ secrets.AZURE_CLIENT_ID }}'"
+           $accessToken = az account get-access-token --resource https://graph.microsoft.com `
+             --query accessToken --output tsv
+           write-host "::add-mask::$accessToken"
+           $accessToken = $accessToken | ConvertTo-SecureString -AsPlainText -Force
+           Connect-MgGraph -AccessToken $accessToken -NoWelcome
+           Get-MgServicePrincipal -Filter "appId eq '${{ secrets.AZURE_CLIENT_ID }}'"
+           # rest of the script here ... 
+        shell: pwsh       
       
-      #- name: Azure CLI Login
-      #  uses: azure/login@v2
-      #  with:
-      #    client-id: ${{ secrets.AZURE_CLIENT_ID }}
-      #    tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-      #    allow-no-subscriptions: true
+      
