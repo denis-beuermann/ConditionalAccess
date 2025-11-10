@@ -63,7 +63,7 @@ jobs:
           azcliversion: latest
           inlineScript: |
             az account list
-            
+
       # Login in to the Azure Sandbox environment
       - name: Azure CLI Login for Deployment
         uses: azure/login@v2
@@ -80,7 +80,8 @@ jobs:
         with:
           azcliversion: latest
           inlineScript: |
-            az account list 
+            az account list
+            az az account set --subscription ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}
 
       - name: Terraform Init
         id: init
