@@ -1,4 +1,5 @@
-resource "azuread_named_location" "Lubmin2" {
+resource "azuread_named_location" "location1" {
+  provider = azuread.personal
   display_name = "location1"
   ip {
     ip_ranges = [
