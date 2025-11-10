@@ -34,7 +34,7 @@ jobs:
         run: |
           Set-PSRepository PSGallery -InstallationPolicy Trusted
           Install-Module az.accounts,az.storage,Microsoft.Graph.Authentication,Microsoft.Graph.Applications
-          
+
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
         with:
@@ -58,7 +58,7 @@ jobs:
           az storage blob upload-batch `
             --account-name 'sttfstategwcprd' `
             --source './scripts' `
-            --destination 'test' `
+            --destination 'state' `
             --auth-mode 'login' `
             --overwrite
         shell: pwsh
