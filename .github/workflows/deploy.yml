@@ -46,6 +46,15 @@ jobs:
           tenant-id: ${{ secrets.TF_AZ_TENANT_ID }}
           subscription-id: ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}  
           allow-no-subscriptions: false
+        
+      - name: Azure Storage
+        run: |
+          az storage blob upload-batch `
+            --account-name 'sttfstategwcprd' `
+            --source ../../README.md `
+            --destination 'test' `
+            --overwrite
+        shell: pwsh
 
       - name: Azure CLI Login
         uses: azure/login@v2
