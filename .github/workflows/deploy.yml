@@ -55,18 +55,7 @@ jobs:
           client-id: ${{ secrets.TF_AZ_CLIENT_ID }}
           tenant-id: ${{ secrets.TF_AZ_TENANT_ID }}
           subscription-id: ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}  
-          allow-no-subscriptions: false
-      
-      # Login in to the Azure Sandbox environment
-      - name: Azure CLI Login for Deployment
-        uses: azure/login@v2
-        env:
-          AZURE_LOGIN_PRE_CLEANUP: false
-          AZURE_LOGIN_POST_CLEANUP: false
-        with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          allow-no-subscriptions: true    
+          allow-no-subscriptions: false  
           
       - name: Terraform Init
         id: init
@@ -80,6 +69,17 @@ jobs:
           WORKING_DIRECTORY: './'
         run: terraform init -backend-config="storage_account_name=$STORAGE_ACCOUNT" -backend-config="container_name=$CONTAINER_NAME" -backend-config="resource_group_name=$RESOURCE_GROUP" -backend-config="key=terraform.tfstate"
       
+      # Login in to the Azure Sandbox environment
+      - name: Azure CLI Login for Deployment
+        uses: azure/login@v2
+        env:
+          AZURE_LOGIN_PRE_CLEANUP: false
+          AZURE_LOGIN_POST_CLEANUP: false
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          allow-no-subscriptions: true
+          
         # Run a terraform plan
       - name: Terraform Plan
         id: plan
