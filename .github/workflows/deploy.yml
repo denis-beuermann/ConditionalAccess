@@ -81,7 +81,7 @@ jobs:
           azcliversion: latest
           inlineScript: |
             az account list
-            az az account set --subscription ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}
+            az account set --subscription ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}
 
       - name: Terraform Init
         id: init
