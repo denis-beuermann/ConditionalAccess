@@ -1,5 +1,5 @@
 resource "azuread_named_location" "location1" {
-  provider = azuread.personal
+  provider = azuread.sandbox
   display_name = "location1"
   ip {
     ip_ranges = [
