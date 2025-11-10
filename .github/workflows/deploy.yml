@@ -55,19 +55,7 @@ jobs:
           client-id: ${{ secrets.TF_AZ_CLIENT_ID }}
           tenant-id: ${{ secrets.TF_AZ_TENANT_ID }}
           subscription-id: ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}  
-          allow-no-subscriptions: false  
-          
-      - name: Terraform Init
-        id: init
-        env:
-          ARM_CLIENT_ID: ${{ secrets.TF_AZ_CLIENT_ID }}
-          ARM_TENANT_ID: ${{ secrets.TF_AZ_TENANT_ID }}
-          ARM_SUBSCRIPTION_ID: ${{ secrets.TF_AZ_SUBSCRIPTION_ID }} 
-          RESOURCE_GROUP: 'rg-tfstae-gwc-prd'
-          STORAGE_ACCOUNT: 'sttfstategwcprd'
-          CONTAINER_NAME: 'state'
-          WORKING_DIRECTORY: './'
-        run: terraform init -backend-config="storage_account_name=$STORAGE_ACCOUNT" -backend-config="container_name=$CONTAINER_NAME" -backend-config="resource_group_name=$RESOURCE_GROUP" -backend-config="key=terraform.tfstate"
+          allow-no-subscriptions: false 
       
       # Login in to the Azure Sandbox environment
       - name: Azure CLI Login for Deployment
@@ -79,7 +67,22 @@ jobs:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           allow-no-subscriptions: true
+
           
+      - name: Terraform Init
+        id: init
+        env:
+          ARM_CLIENT_ID: ${{ secrets.TF_AZ_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.TF_AZ_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.TF_AZ_SUBSCRIPTION_ID }} 
+          RESOURCE_GROUP: 'rg-tfstae-gwc-prd'
+          STORAGE_ACCOUNT: 'sttfstategwcprd'
+          CONTAINER_NAME: 'state'
+          WORKING_DIRECTORY: './'
+          ARM_OIDC_AZURE_SERVICE_CONNECTION_ID: ${{ secrets.AZ_CLIENT_ID }}
+        
+        run: terraform init -backend-config="storage_account_name=$STORAGE_ACCOUNT" -backend-config="container_name=$CONTAINER_NAME" -backend-config="resource_group_name=$RESOURCE_GROUP" -backend-config="key=terraform.tfstate"
+      
         # Run a terraform plan
       - name: Terraform Plan
         id: plan
@@ -105,6 +108,13 @@ jobs:
       #      --auth-mode 'login' `
       #      --overwrite
       #  shell: pwsh
+
+      #- name: Run Azure PowerShell inline script
+      #  uses: azure/powershell@v2
+      #  with:
+      #    inlineScript: |
+      #      Get-AzVM -ResourceGroupName "ResourceGroup11"
+      #    azPSVersion: "latest"
 
       ##- name: Assign Costcenters
       ##  run: |
