@@ -62,7 +62,7 @@ jobs:
         with:
           azcliversion: latest
           inlineScript: |
-            az account show
+            az account list
             
       # Login in to the Azure Sandbox environment
       - name: Azure CLI Login for Deployment
@@ -80,7 +80,7 @@ jobs:
         with:
           azcliversion: latest
           inlineScript: |
-            az account show
+            az account list 
 
       - name: Terraform Init
         id: init
