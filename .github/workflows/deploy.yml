@@ -53,6 +53,7 @@ jobs:
             --account-name 'sttfstategwcprd' `
             --source './scripts' `
             --destination 'test' `
+            --auth-mode 'login' `
             --overwrite
         shell: pwsh
 
