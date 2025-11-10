@@ -51,7 +51,7 @@ jobs:
         run: |
           az storage blob upload-batch `
             --account-name 'sttfstategwcprd' `
-            --source ../../README.md `
+            --source ../../scripts `
             --destination 'test' `
             --overwrite
         shell: pwsh
