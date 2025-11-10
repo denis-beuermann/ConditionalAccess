@@ -65,6 +65,14 @@ jobs:
           WORKING_DIRECTORY: './'
         run: terraform init -backend-config="storage_account_name=$STORAGE_ACCOUNT" -backend-config="container_name=$CONTAINER_NAME" -backend-config="resource_group_name=$RESOURCE_GROUP" -backend-config="key=terraform.tfstate"
       
+        # Run a terraform plan
+      - name: Terraform Plan
+        id: plan
+        env:
+          ARM_CLIENT_ID: ${{ secrets.TF_AZ_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.TF_AZ_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}
+        run: terraform plan -no-color
       #- name: Azure Storage
       #  run: |
       #    az storage blob upload-batch `
