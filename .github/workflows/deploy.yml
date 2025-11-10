@@ -78,10 +78,8 @@ jobs:
           RESOURCE_GROUP: 'rg-tfstae-gwc-prd'
           STORAGE_ACCOUNT: 'sttfstategwcprd'
           CONTAINER_NAME: 'state'
-          WORKING_DIRECTORY: './'
-          ARM_OIDC_AZURE_SERVICE_CONNECTION_ID: ${{ secrets.AZ_CLIENT_ID }}
-        
-        run: terraform init -backend-config="storage_account_name=$STORAGE_ACCOUNT" -backend-config="container_name=$CONTAINER_NAME" -backend-config="resource_group_name=$RESOURCE_GROUP" -backend-config="key=terraform.tfstate" -backend-config="ado_pipeline_service_connection_id=$ARM_OIDC_AZURE_SERVICE_CONNECTION_ID"
+          WORKING_DIRECTORY: './'      
+        run: terraform init -backend-config="storage_account_name=$STORAGE_ACCOUNT" -backend-config="container_name=$CONTAINER_NAME" -backend-config="resource_group_name=$RESOURCE_GROUP" -backend-config="key=terraform.tfstate"
       
         # Run a terraform plan
       - name: Terraform Plan
