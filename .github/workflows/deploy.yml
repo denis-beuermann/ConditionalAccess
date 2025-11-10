@@ -34,11 +34,17 @@ jobs:
         run: |
           Set-PSRepository PSGallery -InstallationPolicy Trusted
           Install-Module az.accounts,az.storage,Microsoft.Graph.Authentication,Microsoft.Graph.Applications
-
+          
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: '1.13.5'
+        
       #- name: Authenticate to Microsoft Graph
-      #  shell: pwsh
-      #  run: |
-      #    Connect-MgGraph -ClientId ${{ secrets.AZURE_CLIENT_ID }} -TenantId ${{ secrets.AZURE_TENANT_ID }} -scope "Directory.Read.All"
+        #  shell: pwsh
+        #  run: |
+        #    Connect-MgGraph -ClientId ${{ secrets.AZURE_CLIENT_ID }} -TenantId ${{ secrets.AZURE_TENANT_ID }} -scope "Directory.Read.All"
+
       - name: Azure CLI Login
         uses: azure/login@v2
         with:
