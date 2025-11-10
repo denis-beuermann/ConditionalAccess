@@ -53,15 +53,26 @@ jobs:
           subscription-id: ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}  
           allow-no-subscriptions: false
         
-      - name: Azure Storage
-        run: |
-          az storage blob upload-batch `
-            --account-name 'sttfstategwcprd' `
-            --source './scripts' `
-            --destination 'state' `
-            --auth-mode 'login' `
-            --overwrite
-        shell: pwsh
+      - name: Terraform Init
+        id: init
+        env:
+          ARM_CLIENT_ID: ${{ secrets.TF_AZ_CLIENT_ID }}
+          ARM_TENANT_ID: ${{ secrets.TF_AZ_TENANT_ID }}
+          ARM_SUBSCRIPTION_ID: ${{ secrets.TF_AZ_SUBSCRIPTION_ID }} 
+          RESOURCE_GROUP: 'rg-tfstae-gwc-prd'
+          STORAGE_ACCOUNT: 'sttfstategwcprd'
+          CONTAINER_NAME: 'state'
+        run: terraform init -backend-config="storage_account_name=$STORAGE_ACCOUNT" -backend-config="container_name=$CONTAINER_NAME" -backend-config="resource_group_name=$RESOURCE_GROUP"
+      
+      #- name: Azure Storage
+      #  run: |
+      #    az storage blob upload-batch `
+      #      --account-name 'sttfstategwcprd' `
+      #      --source './scripts' `
+      #      --destination 'state' `
+      #      --auth-mode 'login' `
+      #      --overwrite
+      #  shell: pwsh
 
       - name: Azure CLI Login
         uses: azure/login@v2
