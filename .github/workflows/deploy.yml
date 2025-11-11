@@ -106,7 +106,7 @@ jobs:
         with:
           inlineScript: |
             get-azcontext
-            write-output {{ env:ARM_CLIENT_ID }}
+            write-output ${{ env.ARM_CLIENT_ID }}
             terraform plan -no-color
           azPSVersion: "latest"
 
