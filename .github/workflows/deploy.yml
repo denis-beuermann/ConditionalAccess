@@ -105,7 +105,8 @@ jobs:
           ARM_TENANT_ID: "85267153-8057-47e2-8a1c-09cdbabb1877"
         with:
           inlineScript: |
-            get-mgserviceprincipal  
+            get-azcontext
+            write-output {{ env:ARM_CLIENT_ID }}
             terraform plan -no-color
           azPSVersion: "latest"
 
