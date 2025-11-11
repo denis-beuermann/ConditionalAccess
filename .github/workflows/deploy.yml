@@ -75,13 +75,13 @@ jobs:
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           allow-no-subscriptions: true
    
-      - name: Azure CLI script
-        uses: azure/cli@v2
-        with:
-          azcliversion: latest
-          inlineScript: |
-            az account list
-            az account set --subscription ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}
+      #- name: Azure CLI script
+      #  uses: azure/cli@v2
+      #  with:
+      #    azcliversion: latest
+      #    inlineScript: |
+      #      az account list
+      #      az account set --subscription ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}
 
       - name: Terraform Init
         id: init
@@ -95,7 +95,15 @@ jobs:
           WORKING_DIRECTORY: './'      
         run: terraform init -backend-config="storage_account_name=$STORAGE_ACCOUNT" -backend-config="container_name=$CONTAINER_NAME" -backend-config="resource_group_name=$RESOURCE_GROUP" -backend-config="key=terraform.tfstate"
       
+      - name: Azure CLI script
+        uses: azure/cli@v2
+        with:
+          azcliversion: latest
+          inlineScript: |
+            az account list
+            az account set --subscription ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}
         # Run a terraform plan
+      
       - name: Terraform Plan
         id: plan
         env:
