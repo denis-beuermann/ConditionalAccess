@@ -100,8 +100,8 @@ jobs:
       - name: Terraform Plan
         id: plan
         env:
-          ARM_CLIENT_ID: ${{ vars.AZ_SANDBOX_CLIENT_ID }}
-          ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          ARM_CLIENT_ID: "d6ea5a29-28c8-4451-8497-695886d95ea8"
+          ARM_TENANT_ID: "85267153-8057-47e2-8a1c-09cdbabb1877"
         run: terraform plan -no-color
       
        # On merge to main apply changes
