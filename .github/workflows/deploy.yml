@@ -82,7 +82,6 @@ jobs:
           inlineScript: |
             az account list
             az account set --subscription ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}
-            az ad app list
 
       - name: Terraform Init
         id: init
