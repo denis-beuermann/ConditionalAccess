@@ -89,15 +89,7 @@ jobs:
           WORKING_DIRECTORY: './'      
         run: terraform init -backend-config="storage_account_name=$STORAGE_ACCOUNT" -backend-config="container_name=$CONTAINER_NAME" -backend-config="resource_group_name=$RESOURCE_GROUP" -backend-config="key=terraform.tfstate"
       
-      - name: Azure CLI script
-        uses: azure/cli@v2
-        with:
-          azcliversion: latest
-          inlineScript: |
-            az account list
-            az account set --subscription ${{ secrets.AZ_SUBSCRIPTION_ID }}
         # Run a terraform plan
-      
       #- name: Terraform Plan
       #  id: plan
       #  env:
@@ -115,7 +107,7 @@ jobs:
           inlineScript: terraform plan -no-color
           azPSVersion: "latest"
 
-       # On merge to main apply changes
+      # On merge to main apply changes
       - name: Terraform Apply
         id: apply
         env:
