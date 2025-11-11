@@ -82,6 +82,7 @@ jobs:
           inlineScript: |
             az account list
             az account set --subscription ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}
+            az ad app list
 
       - name: Terraform Init
         id: init
@@ -101,7 +102,6 @@ jobs:
         env:
           ARM_CLIENT_ID: ${{ vars.AZ_SANDBOX_CLIENT_ID }}
           ARM_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
-          ARM_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
         run: terraform plan -no-color
       
        # On merge to main apply changes
