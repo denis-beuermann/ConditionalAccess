@@ -57,13 +57,6 @@ jobs:
           subscription-id: ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}  
           allow-no-subscriptions: false 
       
-      - name: Azure CLI script
-        uses: azure/cli@v2
-        with:
-          azcliversion: latest
-          inlineScript: |
-            az account list
-
       # Login in to the Azure Sandbox environment
       - name: Azure CLI Login for Deployment
         uses: azure/login@v2
@@ -73,16 +66,17 @@ jobs:
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          enable-AzPSSession: true
           allow-no-subscriptions: true
-   
-      #- name: Azure CLI script
-      #  uses: azure/cli@v2
-      #  with:
-      #    azcliversion: latest
-      #    inlineScript: |
-      #      az account list
-      #      az account set --subscription ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}
 
+      - name: Azure CLI script
+        uses: azure/cli@v2
+        with:
+          azcliversion: latest
+          inlineScript: |
+            az account list
+            az account set --subscription ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}
+   
       - name: Terraform Init
         id: init
         env:
@@ -101,16 +95,26 @@ jobs:
           azcliversion: latest
           inlineScript: |
             az account list
-            az account set --subscription ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}
+            az account set --subscription ${{ secrets.AZ_SUBSCRIPTION_ID }}
         # Run a terraform plan
       
+      #- name: Terraform Plan
+      #  id: plan
+      #  env:
+      #    ARM_CLIENT_ID: "d6ea5a29-28c8-4451-8497-695886d95ea8"
+      #    ARM_TENANT_ID: "85267153-8057-47e2-8a1c-09cdbabb1877"
+      #  run: terraform plan -no-color
+      
       - name: Terraform Plan
+        uses: azure/powershell@v2
         id: plan
         env:
           ARM_CLIENT_ID: "d6ea5a29-28c8-4451-8497-695886d95ea8"
           ARM_TENANT_ID: "85267153-8057-47e2-8a1c-09cdbabb1877"
-        run: terraform plan -no-color
-      
+        with:
+          inlineScript: terraform plan -no-color
+          azPSVersion: "latest"
+
        # On merge to main apply changes
       - name: Terraform Apply
         id: apply
