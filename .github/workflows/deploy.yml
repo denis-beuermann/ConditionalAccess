@@ -104,7 +104,9 @@ jobs:
           ARM_CLIENT_ID: "d6ea5a29-28c8-4451-8497-695886d95ea8"
           ARM_TENANT_ID: "85267153-8057-47e2-8a1c-09cdbabb1877"
         with:
-          inlineScript: terraform plan -no-color
+          inlineScript: |
+            get-mgserviceprincipal  
+            terraform plan -no-color
           azPSVersion: "latest"
 
       # On merge to main apply changes
