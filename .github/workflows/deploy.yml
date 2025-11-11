@@ -80,14 +80,15 @@ jobs:
       - name: Terraform Init
         id: init
         env:
-          ARM_CLIENT_ID: ${{ secrets.TF_AZ_CLIENT_ID }}
-          ARM_TENANT_ID: ${{ secrets.TF_AZ_TENANT_ID }}
-          ARM_SUBSCRIPTION_ID: ${{ secrets.TF_AZ_SUBSCRIPTION_ID }} 
-          RESOURCE_GROUP: 'rg-tfstae-gwc-prd'
+          #ARM_CLIENT_ID: ${{ secrets.TF_AZ_CLIENT_ID }}
+          #ARM_TENANT_ID: ${{ secrets.TF_AZ_TENANT_ID }}
+          #ARM_SUBSCRIPTION_ID: ${{ secrets.TF_AZ_SUBSCRIPTION_ID }}
+          ACCESS_KEY: ${{ secrets.ACCESS_KEY}}
+          #RESOURCE_GROUP: 'rg-tfstae-gwc-prd'
           STORAGE_ACCOUNT: 'sttfstategwcprd'
           CONTAINER_NAME: 'state'
           WORKING_DIRECTORY: './'      
-        run: terraform init -backend-config="storage_account_name=$STORAGE_ACCOUNT" -backend-config="subscription_id=bb7d8567-c068-485b-8f96-6012d56fff0c" -backend-config="container_name=$CONTAINER_NAME" -backend-config="resource_group_name=$RESOURCE_GROUP" -backend-config="key=terraform.tfstate"
+        run: terraform init -backend-config="storage_account_name=$STORAGE_ACCOUNT" -backend-config="container_name=$CONTAINER_NAME" -backend-config="key=terraform.tfstate" -backend-config="access_key=$ACCESS_KEY"
       
         # Run a terraform plan
       #- name: Terraform Plan
