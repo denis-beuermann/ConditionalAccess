@@ -222,9 +222,7 @@ resource "azuread_conditional_access_policy" "Workplace1" {
       ]
       excluded_groups = []
       included_users = ["All"]
-      excluded_users = [
-       "b2cb3878-f508-4f51-9412-750b32256478"
-      ]
+      excluded_users = []
       excluded_guests_or_external_users {
         guest_or_external_user_types = [
           "internalGuest",
@@ -242,6 +240,50 @@ resource "azuread_conditional_access_policy" "Workplace1" {
 
     }
   }
+  grant_controls {
+    operator          = "OR"
+    built_in_controls = ["mfa"]
+  }
+}
+
+resource "azuread_conditional_access_policy" "Mobile1" {
+  display_name = "Mobile 1 - Require MFA for all users"
+
+  state = "enabled"
+
+  conditions {
+    client_app_types    = ["browser", "mobileAppsAndDesktopClients"]
+    platforms {
+      included_platforms = ["android", "iOS"]
+      excluded_platforms = []
+    }
+    applications {
+      included_applications = ["All"]
+      excluded_applications = []
+    }
+    users {
+      included_groups = []
+      excluded_groups = []
+      included_users = ["All"]
+      excluded_users = []
+      excluded_guests_or_external_users {
+        guest_or_external_user_types = [
+          "internalGuest",
+          "b2bCollaborationGuest",
+          "b2bCollaborationMember",
+          "b2bDirectConnectUser",
+          "otherExternalUser",
+          "serviceProvider",
+        ]
+        external_tenants {
+          members         = []
+          membership_kind = "all"
+        }
+      }
+    }
+   
+  }
+      
   grant_controls {
     operator          = "OR"
     built_in_controls = ["mfa"]
